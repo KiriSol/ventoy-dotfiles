@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <unattend xmlns="urn:schemas-microsoft-com:unattend" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State">
-	<!--https://schneegans.de/windows/unattend-generator/?LanguageMode=Unattended&UILanguage=ru-RU&Locale=en-US&Keyboard=00000409&UseKeyboard2=true&Locale2=ru-RU&Keyboard2=00000419&GeoLocation=203&ProcessorArchitecture=amd64&BypassRequirementsCheck=true&UseConfigurationSet=true&ComputerNameMode=Random&CompactOsMode=Default&TimeZoneMode=Implicit&PartitionMode=Unattended&PartitionLayout=GPT&EspSize=300&RecoveryMode=None&DiskAssertionMode=Skip&WindowsEditionMode=Generic&WindowsEdition=pro&InstallFromMode=Automatic&PEMode=Default&UserAccountMode=Unattended&AccountName0=kirisol&AccountDisplayName0=&AccountPassword0=&AccountGroup0=Administrators&AutoLogonMode=Builtin&BuiltinAdministratorPassword=admin12&ObscurePasswords=true&PasswordExpirationMode=Unlimited&LockoutMode=Custom&LockoutThreshold=5&LockoutWindow=5&LockoutDuration=10&HideFiles=HiddenSystem&ShowFileExtensions=true&ShowEndTask=true&TaskbarSearch=Hide&TaskbarIconsMode=Empty&DisableWidgets=true&ShowAllTrayIcons=true&DisableBingResults=true&StartTilesMode=Empty&StartPinsMode=Empty&DisableUac=true&DisableSac=true&DisableSmartScreen=true&DisableFastStartup=true&DisableSystemRestore=true&EnableLongPaths=true&EnableRemoteDesktop=true&HardenSystemDriveAcl=true&AllowPowerShellScripts=true&DisableLastAccess=true&PreventAutomaticReboot=true&TurnOffSystemSounds=true&DisableAppSuggestions=true&PreventDeviceEncryption=true&HideEdgeFre=true&DisableEdgeStartupBoost=true&MakeEdgeUninstallable=true&DeleteWindowsOld=true&EffectsMode=Default&DesktopIconsMode=Custom&StartFoldersMode=Custom&StartFolderDocuments=true&StartFolderDownloads=true&StartFolderMusic=true&StartFolderPersonalFolder=true&StartFolderPictures=true&StartFolderVideos=true&WifiMode=Interactive&ExpressSettings=DisableAll&LockKeysMode=Skip&StickyKeysMode=Disabled&ColorMode=Custom&SystemColorTheme=Dark&AppsColorTheme=Dark&AccentColor=%238caaee&EnableTransparency=true&WallpaperMode=Script&WallpaperScript=%24url+%3D+%27https%3A%2F%2Fraw.githubusercontent.com%2Forangci%2Fwalls-catppuccin-mocha%2Fmaster%2Fsnowflakes.jpg%27%3B%0D%0Areturn+%28+Invoke-WebRequest+-Uri+%24url+-UseBasicParsing+-TimeoutSec+30+%29.Content%3B&LockScreenMode=Script&LockScreenScript=%24url+%3D+%27https%3A%2F%2Fraw.githubusercontent.com%2Forangci%2Fwalls-catppuccin-mocha%2Fmaster%2Fcliff-path.jpg%27%3B%0D%0Areturn+%28+Invoke-WebRequest+-Uri+%24url+-UseBasicParsing+-TimeoutSec+30+%29.Content%3B&Remove3DViewer=true&RemoveBingSearch=true&RemoveCamera=true&RemoveClipchamp=true&RemoveClock=true&RemoveCopilot=true&RemoveCortana=true&RemoveDevHome=true&RemoveWindowsHello=true&RemoveFamily=true&RemoveFeedbackHub=true&RemoveGameAssist=true&RemoveGetHelp=true&RemoveHandwriting=true&RemoveInternetExplorer=true&RemoveMailCalendar=true&RemoveMaps=true&RemoveMathInputPanel=true&RemoveMediaFeatures=true&RemoveMixedReality=true&RemoveZuneVideo=true&RemoveNews=true&RemoveOffice365=true&RemoveOneDrive=true&RemoveOneNote=true&RemoveOneSync=true&RemoveOutlook=true&RemovePaint3D=true&RemovePeople=true&RemovePowerAutomate=true&RemovePowerShell2=true&RemovePowerShellISE=true&RemoveQuickAssist=true&RemoveRecall=true&RemoveRdpClient=true&RemoveSkype=true&RemoveSolitaire=true&RemoveSpeech=true&RemoveStepsRecorder=true&RemoveStickyNotes=true&RemoveTeams=true&RemoveGetStarted=true&RemoveToDo=true&RemoveVoiceRecorder=true&RemoveWallet=true&RemoveWeather=true&RemoveWindowsMediaPlayer=true&RemoveXboxApps=true&RemoveYourPhone=true&DefaultUserScript0=%5BHKEY_USERS%5CDefaultUser%5CControl+Panel%5CColors%5D%0D%0A%22Hilight%22%3D%22140+170+238%22%0D%0A%22HotTrackingColor%22%3D%22140+170+238%22&DefaultUserScriptType0=Reg&DefaultUserScript1=%5BHKEY_USERS%5CDefaultUser%5CEnvironment%5D%0D%0A%22Path%22%3D%22%25USERPROFILE%25%5C.local%5Cbin%3B%25USERPROFILE%25%5CAppData%5CLocal%5CMicrosoft%5CWindowsApps%3B%22&DefaultUserScriptType1=Reg&RestartExplorer=true&WdacMode=Skip-->
+	<!--https://schneegans.de/windows/unattend-generator/?LanguageMode=Unattended&UILanguage=ru-RU&Locale=en-US&Keyboard=00000409&UseKeyboard2=true&Locale2=ru-RU&Keyboard2=00000419&GeoLocation=203&ProcessorArchitecture=amd64&BypassRequirementsCheck=true&BypassNetworkCheck=true&UseConfigurationSet=true&ComputerNameMode=Random&CompactOsMode=Default&TimeZoneMode=Implicit&PartitionMode=Unattended&PartitionLayout=GPT&EspSize=300&RecoveryMode=None&DiskAssertionMode=Skip&WindowsEditionMode=Generic&WindowsEdition=pro&InstallFromMode=Automatic&PEMode=Default&UserAccountMode=Unattended&AccountName0=kirisol&AccountDisplayName0=KiriSol&AccountPassword0=kirwin12&AccountGroup0=Users&AutoLogonMode=Builtin&BuiltinAdministratorPassword=admin12&ObscurePasswords=true&PasswordExpirationMode=Unlimited&LockoutMode=Custom&LockoutThreshold=5&LockoutWindow=5&LockoutDuration=10&HideFiles=HiddenSystem&ShowFileExtensions=true&ShowEndTask=true&TaskbarSearch=Hide&TaskbarIconsMode=Empty&DisableWidgets=true&ShowAllTrayIcons=true&DisableBingResults=true&StartTilesMode=Empty&StartPinsMode=Empty&DisableWindowsUpdate=true&DisableUac=true&DisableSac=true&DisableSmartScreen=true&DisableFastStartup=true&DisableSystemRestore=true&EnableLongPaths=true&EnableRemoteDesktop=true&HardenSystemDriveAcl=true&AllowPowerShellScripts=true&DisableLastAccess=true&PreventAutomaticReboot=true&TurnOffSystemSounds=true&DisableAppSuggestions=true&PreventDeviceEncryption=true&HideEdgeFre=true&DisableEdgeStartupBoost=true&MakeEdgeUninstallable=true&DeleteWindowsOld=true&EffectsMode=Default&DesktopIconsMode=Custom&StartFoldersMode=Custom&StartFolderDocuments=true&StartFolderDownloads=true&StartFolderMusic=true&StartFolderPersonalFolder=true&StartFolderPictures=true&StartFolderVideos=true&WifiMode=Skip&ExpressSettings=DisableAll&LockKeysMode=Skip&StickyKeysMode=Disabled&ColorMode=Custom&SystemColorTheme=Dark&AppsColorTheme=Dark&AccentColor=%230063b1&EnableTransparency=true&WallpaperMode=Default&LockScreenMode=Default&Remove3DViewer=true&RemoveBingSearch=true&RemoveCamera=true&RemoveClipchamp=true&RemoveClock=true&RemoveCopilot=true&RemoveCortana=true&RemoveDevHome=true&RemoveWindowsHello=true&RemoveFamily=true&RemoveFeedbackHub=true&RemoveGameAssist=true&RemoveGetHelp=true&RemoveHandwriting=true&RemoveInternetExplorer=true&RemoveMailCalendar=true&RemoveMaps=true&RemoveMathInputPanel=true&RemoveMediaFeatures=true&RemoveMixedReality=true&RemoveZuneVideo=true&RemoveNews=true&RemoveOffice365=true&RemoveOneDrive=true&RemoveOneNote=true&RemoveOneSync=true&RemoveOutlook=true&RemovePaint3D=true&RemovePeople=true&RemovePowerAutomate=true&RemovePowerShell2=true&RemovePowerShellISE=true&RemoveQuickAssist=true&RemoveRecall=true&RemoveRdpClient=true&RemoveSkype=true&RemoveSolitaire=true&RemoveSpeech=true&RemoveStepsRecorder=true&RemoveStickyNotes=true&RemoveTeams=true&RemoveGetStarted=true&RemoveToDo=true&RemoveVoiceRecorder=true&RemoveWallet=true&RemoveWeather=true&RemoveWindowsMediaPlayer=true&RemoveXboxApps=true&RemoveYourPhone=true&SystemScript0=%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CMicrosoft%5CWindows+NT%5CCurrentVersion%5CSoftwareProtectionPlatform%5CActivation%5D%0D%0A%22Manual%22%3D1%0D%0A%22NotificationDisabled%22%3D%221%22&SystemScriptType0=Reg&SystemScript1=%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CPolicies%5CMicrosoft%5CWindows%5CInstaller%5D%0D%0A%22LimitSystemRestoreCheckpointin%22%3D%221%22&SystemScriptType1=Reg&SystemScript2=%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CPolicies%5CMicrosoft%5CWindows%5CWindows+Search%5D%0D%0A%22DisableRemovableDriveIndexing%22%3D%221%22&SystemScriptType2=Reg&SystemScript3=sc+config+%22WSearch%22+start%3D+disabled%0D%0Asc+stop+%22WSearch%22%0D%0A%0D%0A%3A%3A+bcdedit+%2Fset+TESTSIGNING+OFF&SystemScriptType3=Cmd&SystemScript4=%24keyPath+%3D+%22HKLM%3A%5CSOFTWARE%5CMicrosoft%5CWindows+NT%5CCurrentVersion%5CSoftwareProtectionPlatform%5CActivation%22%0D%0A%24acl+%3D+Get-Acl+%24keyPath%0D%0A%24acl.SetAccessRuleProtection%28%24true%2C+%24false%29+%23+%D0%92%D0%BA%D0%BB%D1%8E%D1%87%D0%B8%D1%82%D1%8C+%D0%B7%D0%B0%D1%89%D0%B8%D1%82%D1%83+%D0%BE%D1%82+%D0%BD%D0%B0%D1%81%D0%BB%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F+%D0%B8+%D1%83%D0%B4%D0%B0%D0%BB%D0%B8%D1%82%D1%8C+%D0%B2%D1%81%D0%B5+%D1%80%D0%B0%D0%B7%D1%80%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D1%8F%0D%0ASet-Acl+-Path+%24keyPath+-AclObject+%24acl&SystemScriptType4=Ps1&DefaultUserScript0=%5BHKEY_USERS%5CDefaultUser%5CEnvironment%5D%0D%0A%22Path%22%3D%22%25USERPROFILE%25%5C.local%5Cbin%3B%25USERPROFILE%25%5CAppData%5CLocal%5CMicrosoft%5CWindowsApps%3B%22&DefaultUserScriptType0=Reg&RestartExplorer=true&WdacMode=Skip-->
 	<settings pass="offlineServicing"></settings>
 	<settings pass="windowsPE">
 		<component name="Microsoft-Windows-International-Core-WinPE" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS">
@@ -96,10 +96,10 @@
 				<LocalAccounts>
 					<LocalAccount wcm:action="add">
 						<Name>kirisol</Name>
-						<DisplayName></DisplayName>
-						<Group>Administrators</Group>
+						<DisplayName>KiriSol</DisplayName>
+						<Group>Users</Group>
 						<Password>
-							<Value>UABhAHMAcwB3AG8AcgBkAA==</Value>
+							<Value>awBpAHIAdwBpAG4AMQAyAFAAYQBzAHMAdwBvAHIAZAA=</Value>
 							<PlainText>false</PlainText>
 						</Password>
 					</LocalAccount>
@@ -117,7 +117,7 @@
 			<OOBE>
 				<ProtectYourPC>3</ProtectYourPC>
 				<HideEULAPage>true</HideEULAPage>
-				<HideWirelessSetupInOOBE>false</HideWirelessSetupInOOBE>
+				<HideWirelessSetupInOOBE>true</HideWirelessSetupInOOBE>
 				<HideOnlineAccountScreens>false</HideOnlineAccountScreens>
 			</OOBE>
 			<FirstLogonCommands>
@@ -408,6 +408,71 @@ End If
 	&lt;/Actions&gt;
 &lt;/Task&gt;
 		</File>
+		<File path="C:\Windows\Setup\Scripts\PauseWindowsUpdate.ps1">
+$formatter = {
+	$args[0].ToString( "yyyy'-'MM'-'dd'T'HH':'mm':'ssK" );
+};
+$now = [datetime]::UtcNow;
+$start = &amp; $formatter $now;
+$end = &amp; $formatter $now.AddDays( 7 );
+
+$params = @{
+	LiteralPath = 'Registry::HKLM\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings';
+	Type = 'String';
+	Force = $true;
+};
+
+Set-ItemProperty @params -Name 'PauseFeatureUpdatesStartTime' -Value $start;
+Set-ItemProperty @params -Name 'PauseFeatureUpdatesEndTime' -Value $end;
+Set-ItemProperty @params -Name 'PauseQualityUpdatesStartTime' -Value $start;
+Set-ItemProperty @params -Name 'PauseQualityUpdatesEndTime' -Value $end;
+Set-ItemProperty @params -Name 'PauseUpdatesStartTime' -Value $start;
+Set-ItemProperty @params -Name 'PauseUpdatesExpiryTime' -Value $end;
+		</File>
+		<File path="C:\Windows\Setup\Scripts\PauseWindowsUpdate.xml">
+&lt;Task version="1.2" xmlns="http://schemas.microsoft.com/windows/2004/02/mit/task"&gt;
+	&lt;Triggers&gt;
+		&lt;BootTrigger&gt;
+			&lt;Repetition&gt;
+				&lt;Interval&gt;P1D&lt;/Interval&gt;
+				&lt;StopAtDurationEnd&gt;false&lt;/StopAtDurationEnd&gt;
+			&lt;/Repetition&gt;
+			&lt;Enabled&gt;true&lt;/Enabled&gt;
+		&lt;/BootTrigger&gt;
+	&lt;/Triggers&gt;
+	&lt;Principals&gt;
+		&lt;Principal id="Author"&gt;
+			&lt;UserId&gt;S-1-5-19&lt;/UserId&gt;
+			&lt;RunLevel&gt;LeastPrivilege&lt;/RunLevel&gt;
+		&lt;/Principal&gt;
+	&lt;/Principals&gt;
+	&lt;Settings&gt;
+		&lt;MultipleInstancesPolicy&gt;IgnoreNew&lt;/MultipleInstancesPolicy&gt;
+		&lt;DisallowStartIfOnBatteries&gt;false&lt;/DisallowStartIfOnBatteries&gt;
+		&lt;StopIfGoingOnBatteries&gt;false&lt;/StopIfGoingOnBatteries&gt;
+		&lt;AllowHardTerminate&gt;true&lt;/AllowHardTerminate&gt;
+		&lt;StartWhenAvailable&gt;false&lt;/StartWhenAvailable&gt;
+		&lt;RunOnlyIfNetworkAvailable&gt;false&lt;/RunOnlyIfNetworkAvailable&gt;
+		&lt;IdleSettings&gt;
+			&lt;StopOnIdleEnd&gt;true&lt;/StopOnIdleEnd&gt;
+			&lt;RestartOnIdle&gt;false&lt;/RestartOnIdle&gt;
+		&lt;/IdleSettings&gt;
+		&lt;AllowStartOnDemand&gt;true&lt;/AllowStartOnDemand&gt;
+		&lt;Enabled&gt;true&lt;/Enabled&gt;
+		&lt;Hidden&gt;false&lt;/Hidden&gt;
+		&lt;RunOnlyIfIdle&gt;false&lt;/RunOnlyIfIdle&gt;
+		&lt;WakeToRun&gt;false&lt;/WakeToRun&gt;
+		&lt;ExecutionTimeLimit&gt;PT72H&lt;/ExecutionTimeLimit&gt;
+		&lt;Priority&gt;7&lt;/Priority&gt;
+	&lt;/Settings&gt;
+	&lt;Actions Context="Author"&gt;
+		&lt;Exec&gt;
+			&lt;Command&gt;C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe&lt;/Command&gt;
+			&lt;Arguments&gt;-Command "Get-Content -LiteralPath 'C:\Windows\Setup\Scripts\PauseWindowsUpdate.ps1' -Raw | Invoke-Expression;"&lt;/Arguments&gt;
+		&lt;/Exec&gt;
+	&lt;/Actions&gt;
+&lt;/Task&gt;
+		</File>
 		<File path="C:\Windows\Setup\Scripts\ShowAllTrayIcons.ps1">
 if( [System.Environment]::OSVersion.Version.Build -lt 20000 ) {
 	# Windows 10
@@ -587,7 +652,7 @@ $lightThemeSystem = 0;
 $lightThemeApps = 0;
 $accentColorOnStart = 0;
 $enableTransparency = 1;
-$htmlAccentColor = '#8CAAEE';
+$htmlAccentColor = '#0063B1';
 &amp; {
 	$params = @{
 		LiteralPath = 'Registry::HKCU\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize';
@@ -608,14 +673,14 @@ $htmlAccentColor = '#8CAAEE';
 			[System.Drawing.Color]
 			$Color
 		);
-
+						
 		[byte[]] $bytes = @(
 			$Color.R;
 			$Color.G;
 			$Color.B;
 			$Color.A;
 		);
-		return [System.BitConverter]::ToUInt32( $bytes, 0);
+		return [System.BitConverter]::ToUInt32( $bytes, 0); 
 	}
 
 	$startColor = [System.Drawing.Color]::FromArgb( 0xD2, $accentColor );
@@ -635,83 +700,38 @@ $htmlAccentColor = '#8CAAEE';
 	Set-ItemProperty @params -Value $palette -Type 'Binary' -Force;
 };
 		</File>
-		<File path="C:\Windows\Setup\Scripts\GetWallpaper.ps1">
-$url = 'https://raw.githubusercontent.com/orangci/walls-catppuccin-mocha/master/snowflakes.jpg';
-return ( Invoke-WebRequest -Uri $url -UseBasicParsing -TimeoutSec 30 ).Content;
-		</File>
-		<File path="C:\Windows\Setup\Scripts\SetWallpaper.ps1">
-Add-Type -TypeDefinition '
-	using System.Drawing;
-	using System.Runtime.InteropServices;
-
-	public static class WallpaperSetter {
-		[DllImport("user32.dll")]
-		private static extern bool SetSysColors(
-			int cElements,
-			int[] lpaElements,
-			int[] lpaRgbValues
-		);
-
-		[DllImport("user32.dll")]
-		private static extern bool SystemParametersInfo(
-			uint uiAction,
-			uint uiParam,
-			string pvParam,
-			uint fWinIni
-		);
-
-		public static void SetDesktopBackground(Color color) {
-			SystemParametersInfo(20, 0, "", 0);
-			SetSysColors(1, new int[] { 1 }, new int[] { ColorTranslator.ToWin32(color) });
-		}
-
-		public static void SetDesktopImage(string file) {
-			SystemParametersInfo(20, 0, file, 0);
-		}
-	}
-' -ReferencedAssemblies 'System.Drawing';
-
-function Set-WallpaperColor {
-	param(
-		[string]
-		$HtmlColor
-	);
-
-	$color = [System.Drawing.ColorTranslator]::FromHtml( $HtmlColor );
-	[WallpaperSetter]::SetDesktopBackground( $color );
-	Set-ItemProperty -Path 'Registry::HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Wallpapers' -Name 'BackgroundType' -Type 'DWord' -Value 1 -Force;
-	Set-ItemProperty -Path 'Registry::HKCU\Control Panel\Desktop' -Name 'WallPaper' -Type 'String' -Value '' -Force;
-	Set-ItemProperty -Path 'Registry::HKCU\Control Panel\Colors' -Name 'Background' -Type 'String' -Value "$($color.R) $($color.G) $($color.B)" -Force;
-}
-
-function Set-WallpaperImage {
-	param(
-		[string]
-		$LiteralPath
-	);
-
-	if( $LiteralPath | Test-Path ) {
-		[WallpaperSetter]::SetDesktopImage( $LiteralPath );
-		Set-ItemProperty -Path 'Registry::HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Wallpapers' -Name 'BackgroundType' -Type 'DWord' -Value 0 -Force;
-		Set-ItemProperty -Path 'Registry::HKCU\Control Panel\Desktop' -Name 'WallPaper' -Type 'String' -Value $LiteralPath -Force;
-	} else {
-		"Cannot use '$LiteralPath' as a desktop wallpaper because that file does not exist.";
-	}
-}
-Set-WallpaperImage -LiteralPath 'C:\Windows\Setup\Scripts\Wallpaper';
-		</File>
-		<File path="C:\Windows\Setup\Scripts\GetLockScreenImage.ps1">
-$url = 'https://raw.githubusercontent.com/orangci/walls-catppuccin-mocha/master/cliff-path.jpg';
-return ( Invoke-WebRequest -Uri $url -UseBasicParsing -TimeoutSec 30 ).Content;
-		</File>
 		<File path="C:\Windows\Setup\Scripts\unattend-01.reg">
 Windows Registry Editor Version 5.00
 
-[HKEY_USERS\DefaultUser\Control Panel\Colors]
-"Hilight"="140 170 238"
-"HotTrackingColor"="140 170 238"
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform\Activation]
+"Manual"=1
+"NotificationDisabled"="1"
 		</File>
 		<File path="C:\Windows\Setup\Scripts\unattend-02.reg">
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Installer]
+"LimitSystemRestoreCheckpointin"="1"
+		</File>
+		<File path="C:\Windows\Setup\Scripts\unattend-03.reg">
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"DisableRemovableDriveIndexing"="1"
+		</File>
+		<File path="C:\Windows\Setup\Scripts\unattend-04.cmd">
+sc config "WSearch" start= disabled
+sc stop "WSearch"
+
+:: bcdedit /set TESTSIGNING OFF
+		</File>
+		<File path="C:\Windows\Setup\Scripts\unattend-05.ps1">
+$keyPath = "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform\Activation"
+$acl = Get-Acl $keyPath
+$acl.SetAccessRuleProtection($true, $false) # &#x412;&#x43A;&#x43B;&#x44E;&#x447;&#x438;&#x442;&#x44C; &#x437;&#x430;&#x449;&#x438;&#x442;&#x443; &#x43E;&#x442; &#x43D;&#x430;&#x441;&#x43B;&#x435;&#x434;&#x43E;&#x432;&#x430;&#x43D;&#x438;&#x44F; &#x438; &#x443;&#x434;&#x430;&#x43B;&#x438;&#x442;&#x44C; &#x432;&#x441;&#x435; &#x440;&#x430;&#x437;&#x440;&#x435;&#x448;&#x435;&#x43D;&#x438;&#x44F;
+Set-Acl -Path $keyPath -AclObject $acl
+		</File>
+		<File path="C:\Windows\Setup\Scripts\unattend-06.reg">
 Windows Registry Editor Version 5.00
 
 [HKEY_USERS\DefaultUser\Environment]
@@ -721,6 +741,9 @@ Windows Registry Editor Version 5.00
 $scripts = @(
 	{
 		reg.exe add "HKLM\SYSTEM\Setup\MoSetup" /v AllowUpgradesWithUnsupportedTPMOrCPU /t REG_DWORD /d 1 /f;
+	};
+	{
+		reg.exe add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\OOBE" /v BypassNRO /t REG_DWORD /d 1 /f;
 	};
 	{
 		ReAgentc.exe /disable;
@@ -759,6 +782,9 @@ $scripts = @(
 	};
 	{
 		Register-ScheduledTask -TaskName 'UnlockStartLayout' -Xml $( Get-Content -LiteralPath 'C:\Windows\Setup\Scripts\UnlockStartLayout.xml' -Raw );
+	};
+	{
+		Register-ScheduledTask -TaskName 'PauseWindowsUpdate' -Xml $( Get-Content -LiteralPath 'C:\Windows\Setup\Scripts\PauseWindowsUpdate.xml' -Raw );
 	};
 	{
 		reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\CI\Policy" /v VerifiedAndReputablePolicyState /t REG_DWORD /d 0 /f;
@@ -830,21 +856,19 @@ $scripts = @(
 		reg.exe add "HKU\.DEFAULT\Control Panel\Accessibility\StickyKeys" /v Flags /t REG_SZ /d 10 /f;
 	};
 	{
-		try {
-		  $bytes = Get-Content -LiteralPath 'C:\Windows\Setup\Scripts\GetWallpaper.ps1' -Raw | Invoke-Expression;
-		  [System.IO.File]::WriteAllBytes( 'C:\Windows\Setup\Scripts\Wallpaper', $bytes );
-		} catch {
-		  $_;
-		}
+		reg.exe import "C:\Windows\Setup\Scripts\unattend-01.reg";
 	};
 	{
-		try {
-		  $bytes = Get-Content -LiteralPath 'C:\Windows\Setup\Scripts\GetLockScreenImage.ps1' -Raw | Invoke-Expression;
-		  [System.IO.File]::WriteAllBytes( 'C:\Windows\Setup\Scripts\LockScreenImage', $bytes );
-		  reg.exe add "HKLM\Software\Microsoft\Windows\CurrentVersion\PersonalizationCSP" /v LockScreenImagePath /t REG_SZ /d "C:\Windows\Setup\Scripts\LockScreenImage" /f;
-		} catch {
-		  $_;
-		}
+		reg.exe import "C:\Windows\Setup\Scripts\unattend-02.reg";
+	};
+	{
+		reg.exe import "C:\Windows\Setup\Scripts\unattend-03.reg";
+	};
+	{
+		C:\Windows\Setup\Scripts\unattend-04.cmd;
+	};
+	{
+		Get-Content -LiteralPath 'C:\Windows\Setup\Scripts\unattend-05.ps1' -Raw | Invoke-Expression;
 	};
 );
 
@@ -922,9 +946,6 @@ $scripts = @(
 	};
 	{
 		Get-Content -LiteralPath 'C:\Windows\Setup\Scripts\SetColorTheme.ps1' -Raw | Invoke-Expression;
-	};
-	{
-		Get-Content -LiteralPath 'C:\Windows\Setup\Scripts\SetWallpaper.ps1' -Raw | Invoke-Expression;
 	};
 	{
 		Get-Process -Name 'explorer' -ErrorAction 'SilentlyContinue' | Where-Object -FilterScript {
@@ -1011,7 +1032,7 @@ $scripts = @(
 		  'SubscribedContent-353698Enabled';
 		  'SystemPaneSuggestionsEnabled';
 		);
-
+		
 		foreach( $name in $names ) {
 		  reg.exe add "HKU\DefaultUser\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" /v $name /t REG_DWORD /d 0 /f;
 		}
@@ -1029,10 +1050,7 @@ $scripts = @(
 		reg.exe add "HKU\DefaultUser\Software\Microsoft\Windows\DWM" /v ColorPrevalence /t REG_DWORD /d 0 /f;
 	};
 	{
-		reg.exe import "C:\Windows\Setup\Scripts\unattend-01.reg";
-	};
-	{
-		reg.exe import "C:\Windows\Setup\Scripts\unattend-02.reg";
+		reg.exe import "C:\Windows\Setup\Scripts\unattend-06.reg";
 	};
 	{
 		reg.exe add "HKU\DefaultUser\Software\Microsoft\Windows\CurrentVersion\RunOnce" /v "UnattendedSetup" /t REG_SZ /d "powershell.exe -WindowStyle Normal -NoProfile -Command \""Get-Content -LiteralPath 'C:\Windows\Setup\Scripts\UserOnce.ps1' -Raw | Invoke-Expression;\""" /f;
