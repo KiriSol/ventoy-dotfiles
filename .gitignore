@@ -1,0 +1,11 @@
+# Iso images
+ISO/**/*.iso
+
+# Ventoy config backup
+ventoy/ventoy_backup.json
+
+# Ventoy plugins log
+VentoyPlugson.log
+
+# Other
+System\ Volume\ Information/
