@@ -1,20 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <unattend xmlns="urn:schemas-microsoft-com:unattend" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State">
-	<!--https://schneegans.de/windows/unattend-generator/?LanguageMode=Unattended&UILanguage=ru-RU&Locale=en-US&Keyboard=00000409&UseKeyboard2=true&Locale2=ru-RU&Keyboard2=00000419&GeoLocation=203&ProcessorArchitecture=amd64&BypassRequirementsCheck=true&UseConfigurationSet=true&ComputerNameMode=Random&CompactOsMode=Default&TimeZoneMode=Implicit&PartitionMode=Unattended&PartitionLayout=GPT&EspSize=300&RecoveryMode=None&DiskAssertionMode=Skip&WindowsEditionMode=Generic&WindowsEdition=pro&InstallFromMode=Automatic&PEMode=Default&UserAccountMode=Unattended&AccountName0=kirisol&AccountDisplayName0=KiriSol&AccountPassword0=kirwin12&AccountGroup0=Users&AutoLogonMode=Builtin&BuiltinAdministratorPassword=admin12&ObscurePasswords=true&PasswordExpirationMode=Unlimited&LockoutMode=Custom&LockoutThreshold=5&LockoutWindow=5&LockoutDuration=10&HideFiles=HiddenSystem&ShowFileExtensions=true&ShowEndTask=true&TaskbarSearch=Hide&TaskbarIconsMode=Empty&DisableWidgets=true&ShowAllTrayIcons=true&DisableBingResults=true&StartTilesMode=Empty&StartPinsMode=Empty&DisableWindowsUpdate=true&DisableUac=true&DisableSac=true&DisableSmartScreen=true&DisableFastStartup=true&DisableSystemRestore=true&EnableLongPaths=true&EnableRemoteDesktop=true&HardenSystemDriveAcl=true&AllowPowerShellScripts=true&DisableLastAccess=true&PreventAutomaticReboot=true&TurnOffSystemSounds=true&DisableAppSuggestions=true&PreventDeviceEncryption=true&HideEdgeFre=true&DisableEdgeStartupBoost=true&MakeEdgeUninstallable=true&DeleteWindowsOld=true&EffectsMode=Default&DesktopIconsMode=Custom&StartFoldersMode=Custom&StartFolderDocuments=true&StartFolderDownloads=true&StartFolderMusic=true&StartFolderPersonalFolder=true&StartFolderPictures=true&StartFolderVideos=true&WifiMode=Interactive&ExpressSettings=DisableAll&LockKeysMode=Skip&StickyKeysMode=Disabled&ColorMode=Custom&SystemColorTheme=Dark&AppsColorTheme=Dark&AccentColor=%230063b1&EnableTransparency=true&WallpaperMode=Default&LockScreenMode=Default&Remove3DViewer=true&RemoveBingSearch=true&RemoveCamera=true&RemoveClipchamp=true&RemoveClock=true&RemoveCopilot=true&RemoveCortana=true&RemoveDevHome=true&RemoveWindowsHello=true&RemoveFamily=true&RemoveFeedbackHub=true&RemoveGameAssist=true&RemoveGetHelp=true&RemoveHandwriting=true&RemoveInternetExplorer=true&RemoveMailCalendar=true&RemoveMaps=true&RemoveMathInputPanel=true&RemoveMediaFeatures=true&RemoveMixedReality=true&RemoveZuneVideo=true&RemoveNews=true&RemoveOffice365=true&RemoveOneDrive=true&RemoveOneNote=true&RemoveOneSync=true&RemoveOutlook=true&RemovePaint3D=true&RemovePeople=true&RemovePowerAutomate=true&RemovePowerShell2=true&RemovePowerShellISE=true&RemoveQuickAssist=true&RemoveRecall=true&RemoveRdpClient=true&RemoveSkype=true&RemoveSolitaire=true&RemoveSpeech=true&RemoveStepsRecorder=true&RemoveStickyNotes=true&RemoveTeams=true&RemoveGetStarted=true&RemoveToDo=true&RemoveVoiceRecorder=true&RemoveWallet=true&RemoveWeather=true&RemoveWindowsMediaPlayer=true&RemoveXboxApps=true&RemoveYourPhone=true&SystemScript0=%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CMicrosoft%5CWindows+NT%5CCurrentVersion%5CSoftwareProtectionPlatform%5CActivation%5D%0D%0A%22Manual%22%3D1%0D%0A%22NotificationDisabled%22%3D%221%22&SystemScriptType0=Reg&SystemScript1=%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CPolicies%5CMicrosoft%5CWindows%5CInstaller%5D%0D%0A%22LimitSystemRestoreCheckpointin%22%3D%221%22&SystemScriptType1=Reg&SystemScript2=%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CPolicies%5CMicrosoft%5CWindows%5CWindows+Search%5D%0D%0A%22DisableRemovableDriveIndexing%22%3D%221%22&SystemScriptType2=Reg&SystemScript3=sc+config+%22WSearch%22+start%3D+disabled%0D%0Asc+stop+%22WSearch%22%0D%0A%0D%0A%3A%3A+bcdedit+%2Fset+TESTSIGNING+OFF&SystemScriptType3=Cmd&SystemScript4=%24keyPath+%3D+%22HKLM%3A%5CSOFTWARE%5CMicrosoft%5CWindows+NT%5CCurrentVersion%5CSoftwareProtectionPlatform%5CActivation%22%0D%0A%24acl+%3D+Get-Acl+%24keyPath%0D%0A%24acl.SetAccessRuleProtection%28%24true%2C+%24false%29+%23+%D0%92%D0%BA%D0%BB%D1%8E%D1%87%D0%B8%D1%82%D1%8C+%D0%B7%D0%B0%D1%89%D0%B8%D1%82%D1%83+%D0%BE%D1%82+%D0%BD%D0%B0%D1%81%D0%BB%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F+%D0%B8+%D1%83%D0%B4%D0%B0%D0%BB%D0%B8%D1%82%D1%8C+%D0%B2%D1%81%D0%B5+%D1%80%D0%B0%D0%B7%D1%80%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D1%8F%0D%0ASet-Acl+-Path+%24keyPath+-AclObject+%24acl&SystemScriptType4=Ps1&DefaultUserScript0=%5BHKEY_USERS%5CDefaultUser%5CEnvironment%5D%0D%0A%22Path%22%3D%22%25USERPROFILE%25%5C.local%5Cbin%3B%25USERPROFILE%25%5CAppData%5CLocal%5CMicrosoft%5CWindowsApps%3B%22&DefaultUserScriptType0=Reg&RestartExplorer=true&WdacMode=Skip-->
+	<!--https://schneegans.de/windows/unattend-generator/?LanguageMode=Unattended&UILanguage=ru-RU&Locale=en-US&Keyboard=00000409&UseKeyboard2=true&Locale2=ru-RU&Keyboard2=00000419&GeoLocation=203&ProcessorArchitecture=amd64&BypassRequirementsCheck=true&UseConfigurationSet=true&ComputerNameMode=Random&CompactOsMode=Default&TimeZoneMode=Implicit&PartitionMode=Interactive&DiskAssertionMode=Skip&WindowsEditionMode=Generic&WindowsEdition=pro&InstallFromMode=Automatic&PEMode=Default&UserAccountMode=Unattended&AccountName0=kirisol&AccountDisplayName0=KiriSol&AccountPassword0=kirwin12&AccountGroup0=Users&AutoLogonMode=Builtin&BuiltinAdministratorPassword=admin12&ObscurePasswords=true&PasswordExpirationMode=Unlimited&LockoutMode=Custom&LockoutThreshold=5&LockoutWindow=5&LockoutDuration=10&HideFiles=HiddenSystem&ShowFileExtensions=true&ShowEndTask=true&TaskbarSearch=Hide&TaskbarIconsMode=Empty&DisableWidgets=true&ShowAllTrayIcons=true&DisableBingResults=true&StartTilesMode=Empty&StartPinsMode=Empty&DisableWindowsUpdate=true&DisableUac=true&DisableSac=true&DisableSmartScreen=true&DisableFastStartup=true&DisableSystemRestore=true&EnableLongPaths=true&EnableRemoteDesktop=true&HardenSystemDriveAcl=true&AllowPowerShellScripts=true&DisableLastAccess=true&PreventAutomaticReboot=true&TurnOffSystemSounds=true&DisableAppSuggestions=true&PreventDeviceEncryption=true&HideEdgeFre=true&DisableEdgeStartupBoost=true&MakeEdgeUninstallable=true&DeleteWindowsOld=true&EffectsMode=Default&DesktopIconsMode=Custom&StartFoldersMode=Custom&StartFolderDocuments=true&StartFolderDownloads=true&StartFolderMusic=true&StartFolderPersonalFolder=true&StartFolderPictures=true&StartFolderVideos=true&WifiMode=Interactive&ExpressSettings=DisableAll&LockKeysMode=Skip&StickyKeysMode=Disabled&ColorMode=Custom&SystemColorTheme=Dark&AppsColorTheme=Dark&AccentColor=%230063b1&EnableTransparency=true&WallpaperMode=Default&LockScreenMode=Default&Remove3DViewer=true&RemoveBingSearch=true&RemoveCamera=true&RemoveClipchamp=true&RemoveClock=true&RemoveCopilot=true&RemoveCortana=true&RemoveDevHome=true&RemoveWindowsHello=true&RemoveFamily=true&RemoveFeedbackHub=true&RemoveGameAssist=true&RemoveGetHelp=true&RemoveHandwriting=true&RemoveInternetExplorer=true&RemoveMailCalendar=true&RemoveMaps=true&RemoveMathInputPanel=true&RemoveMediaFeatures=true&RemoveMixedReality=true&RemoveZuneVideo=true&RemoveNews=true&RemoveOffice365=true&RemoveOneDrive=true&RemoveOneNote=true&RemoveOneSync=true&RemoveOutlook=true&RemovePaint3D=true&RemovePeople=true&RemovePowerAutomate=true&RemovePowerShell2=true&RemovePowerShellISE=true&RemoveQuickAssist=true&RemoveRecall=true&RemoveRdpClient=true&RemoveSkype=true&RemoveSolitaire=true&RemoveSpeech=true&RemoveStepsRecorder=true&RemoveStickyNotes=true&RemoveTeams=true&RemoveGetStarted=true&RemoveToDo=true&RemoveVoiceRecorder=true&RemoveWallet=true&RemoveWeather=true&RemoveWindowsMediaPlayer=true&RemoveXboxApps=true&RemoveYourPhone=true&SystemScript0=%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CMicrosoft%5CWindows+NT%5CCurrentVersion%5CSoftwareProtectionPlatform%5CActivation%5D%0D%0A%22Manual%22%3D1%0D%0A%22NotificationDisabled%22%3D%221%22&SystemScriptType0=Reg&SystemScript1=%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CPolicies%5CMicrosoft%5CWindows%5CInstaller%5D%0D%0A%22LimitSystemRestoreCheckpointin%22%3D%221%22&SystemScriptType1=Reg&SystemScript2=%5BHKEY_LOCAL_MACHINE%5CSOFTWARE%5CPolicies%5CMicrosoft%5CWindows%5CWindows+Search%5D%0D%0A%22DisableRemovableDriveIndexing%22%3D%221%22&SystemScriptType2=Reg&SystemScript3=sc+config+%22WSearch%22+start%3D+disabled%0D%0Asc+stop+%22WSearch%22&SystemScriptType3=Cmd&SystemScript4=%24keyPath+%3D+%22HKLM%3A%5CSOFTWARE%5CMicrosoft%5CWindows+NT%5CCurrentVersion%5CSoftwareProtectionPlatform%5CActivation%22%0D%0A%24acl+%3D+Get-Acl+%24keyPath%0D%0A%24acl.SetAccessRuleProtection%28%24true%2C+%24false%29+%23+%D0%92%D0%BA%D0%BB%D1%8E%D1%87%D0%B8%D1%82%D1%8C+%D0%B7%D0%B0%D1%89%D0%B8%D1%82%D1%83+%D0%BE%D1%82+%D0%BD%D0%B0%D1%81%D0%BB%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F+%D0%B8+%D1%83%D0%B4%D0%B0%D0%BB%D0%B8%D1%82%D1%8C+%D0%B2%D1%81%D0%B5+%D1%80%D0%B0%D0%B7%D1%80%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D1%8F%0D%0ASet-Acl+-Path+%24keyPath+-AclObject+%24acl&SystemScriptType4=Ps1&DefaultUserScript0=%5BHKEY_USERS%5CDefaultUser%5CEnvironment%5D%0D%0A%22Path%22%3D%22%25USERPROFILE%25%5C.local%5Cbin%3B%25USERPROFILE%25%5CAppData%5CLocal%5CMicrosoft%5CWindowsApps%3B%22&DefaultUserScriptType0=Reg&RestartExplorer=true&WdacMode=Skip-->
 	<settings pass="offlineServicing"></settings>
 	<settings pass="windowsPE">
 		<component name="Microsoft-Windows-International-Core-WinPE" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS">
 			<UILanguage>ru-RU</UILanguage>
 		</component>
 		<component name="Microsoft-Windows-Setup" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS">
-			<ImageInstall>
-				<OSImage>
-					<InstallTo>
-						<DiskID>0</DiskID>
-						<PartitionID>3</PartitionID>
-					</InstallTo>
-				</OSImage>
-			</ImageInstall>
 			<UserData>
 				<ProductKey>
 					<Key>VK7JG-NPHTM-C97JM-9MPGT-3V66T</Key>
@@ -35,18 +27,6 @@
 				<RunSynchronousCommand wcm:action="add">
 					<Order>3</Order>
 					<Path>reg.exe add "HKLM\SYSTEM\Setup\LabConfig" /v BypassRAMCheck /t REG_DWORD /d 1 /f</Path>
-				</RunSynchronousCommand>
-				<RunSynchronousCommand wcm:action="add">
-					<Order>4</Order>
-					<Path>cmd.exe /c "&gt;&gt;"X:\diskpart.txt" (echo:SELECT DISK=0&amp;echo:CLEAN&amp;echo:CONVERT GPT&amp;echo:CREATE PARTITION EFI SIZE=300&amp;echo:FORMAT QUICK FS=FAT32 LABEL=^"System^"&amp;echo:ASSIGN LETTER=S&amp;echo:CREATE PARTITION MSR SIZE=16&amp;echo:CREATE PARTITION PRIMARY)"</Path>
-				</RunSynchronousCommand>
-				<RunSynchronousCommand wcm:action="add">
-					<Order>5</Order>
-					<Path>cmd.exe /c "&gt;&gt;"X:\diskpart.txt" (echo:FORMAT QUICK FS=NTFS LABEL=^"Windows^"&amp;echo:ASSIGN LETTER=W)"</Path>
-				</RunSynchronousCommand>
-				<RunSynchronousCommand wcm:action="add">
-					<Order>6</Order>
-					<Path>cmd.exe /c "diskpart.exe /s "X:\diskpart.txt" &gt;&gt;"X:\diskpart.log" || ( type "X:\diskpart.log" &amp; echo diskpart encountered an error. &amp; pause &amp; exit /b 1 )"</Path>
 				</RunSynchronousCommand>
 			</RunSynchronous>
 		</component>
@@ -189,9 +169,6 @@ $selectors = @(
 	'Microsoft.GamingApp';
 	'Microsoft.YourPhone';
 	'Microsoft.ZuneVideo';
-    'Microsoft.Edge';
-	'Microsoft.EdgeWebView';
-	'Microsoft.EdgeDriver';
 );
 $getCommand = {
   Get-AppxProvisionedPackage -Online;
@@ -248,7 +225,6 @@ $selectors = @(
 	'Hello.Face.Migration.18967';
 	'Hello.Face.20134';
 	'Media.WindowsMediaPlayer';
-    'Browser.MicrosoftEdge';
 );
 $getCommand = {
   Get-WindowsCapability -Online | Where-Object -Property 'State' -NotIn -Value @(
@@ -677,14 +653,14 @@ $htmlAccentColor = '#0063B1';
 			[System.Drawing.Color]
 			$Color
 		);
-
+						
 		[byte[]] $bytes = @(
 			$Color.R;
 			$Color.G;
 			$Color.B;
 			$Color.A;
 		);
-		return [System.BitConverter]::ToUInt32( $bytes, 0);
+		return [System.BitConverter]::ToUInt32( $bytes, 0); 
 	}
 
 	$startColor = [System.Drawing.Color]::FromArgb( 0xD2, $accentColor );
@@ -726,8 +702,6 @@ Windows Registry Editor Version 5.00
 		<File path="C:\Windows\Setup\Scripts\unattend-04.cmd">
 sc config "WSearch" start= disabled
 sc stop "WSearch"
-
-:: bcdedit /set TESTSIGNING OFF
 		</File>
 		<File path="C:\Windows\Setup\Scripts\unattend-05.ps1">
 $keyPath = "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform\Activation"
@@ -745,10 +719,6 @@ Windows Registry Editor Version 5.00
 $scripts = @(
 	{
 		reg.exe add "HKLM\SYSTEM\Setup\MoSetup" /v AllowUpgradesWithUnsupportedTPMOrCPU /t REG_DWORD /d 1 /f;
-	};
-	{
-		ReAgentc.exe /disable;
-		Remove-Item -LiteralPath 'C:\Windows\System32\Recovery\Winre.wim' -Force -ErrorAction 'SilentlyContinue';
 	};
 	{
 		Remove-Item -LiteralPath 'Registry::HKLM\Software\Microsoft\WindowsUpdate\Orchestrator\UScheduler_Oobe\DevHomeUpdate' -Force -ErrorAction 'SilentlyContinue';
@@ -1033,7 +1003,7 @@ $scripts = @(
 		  'SubscribedContent-353698Enabled';
 		  'SystemPaneSuggestionsEnabled';
 		);
-
+		
 		foreach( $name in $names ) {
 		  reg.exe add "HKU\DefaultUser\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" /v $name /t REG_DWORD /d 0 /f;
 		}
