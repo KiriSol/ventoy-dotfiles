@@ -14,18 +14,18 @@
     {
       "parent": "/ISO/OS-installation/Windows",
       "template": [
-        "/ventoy/scripts/windows-unattend/en.default_online.xml",
-        "/ventoy/scripts/windows-unattend/en.default_offline.xml",
-        "/ventoy/scripts/windows-unattend/ru.default_online.xml",
-        "/ventoy/scripts/windows-unattend/ru.default_offline.xml",
-        "/ventoy/scripts/windows-unattend/en.wipe_online.xml",
-        "/ventoy/scripts/windows-unattend/en.wipe_offline.xml",
-        "/ventoy/scripts/windows-unattend/ru.wipe_online.xml",
-        "/ventoy/scripts/windows-unattend/ru.wipe_offline.xml",
-        "/ventoy/scripts/windows-unattend/en.theme_online.xml",
-        "/ventoy/scripts/windows-unattend/en.theme_offline.xml",
-        "/ventoy/scripts/windows-unattend/ru.theme_online.xml",
-        "/ventoy/scripts/windows-unattend/ru.theme_offline.xml"
+        "/ventoy/scripts/windows-unattend/en.default-online.xml",
+        "/ventoy/scripts/windows-unattend/en.default-offline.xml",
+        "/ventoy/scripts/windows-unattend/ru.default-online.xml",
+        "/ventoy/scripts/windows-unattend/ru.default-offline.xml",
+        "/ventoy/scripts/windows-unattend/en.wipe-online.xml",
+        "/ventoy/scripts/windows-unattend/en.wipe-offline.xml",
+        "/ventoy/scripts/windows-unattend/ru.wipe-online.xml",
+        "/ventoy/scripts/windows-unattend/ru.wipe-offline.xml",
+        "/ventoy/scripts/windows-unattend/en.theme-online.xml",
+        "/ventoy/scripts/windows-unattend/en.theme-offline.xml",
+        "/ventoy/scripts/windows-unattend/ru.theme-online.xml",
+        "/ventoy/scripts/windows-unattend/ru.theme-offline.xml"
       ]
     }
   ],
