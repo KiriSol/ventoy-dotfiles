@@ -12,7 +12,7 @@
   },
   "auto_install": [
     {
-      "parent": "/ISO/Windows",
+      "parent": "/ISO/OS-installation/Windows",
       "template": [
         "/ventoy/scripts/windows-unattend/en.default_online.xml",
         "/ventoy/scripts/windows-unattend/en.default_offline.xml",
