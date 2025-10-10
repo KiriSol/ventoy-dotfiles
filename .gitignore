@@ -11,4 +11,4 @@ VentoyPlugson.log
 System\ Volume\ Information/
 
 # Local scripts
-ventoy/scripts/windows-unattend/local.xml
+ventoy/scripts/windows-unattend/local*.xml
