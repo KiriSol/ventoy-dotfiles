@@ -12,3 +12,6 @@ System\ Volume\ Information/
 
 # Local scripts
 ventoy/scripts/windows-unattend/local*.xml
+
+# Local utils
+utilities/*
