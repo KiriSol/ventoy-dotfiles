@@ -1,0 +1,12 @@
+{
+  "$schema": "../schema.json",
+  "scope": "machine",
+  "packages": [
+    { "id": "Microsoft.PowerToys" },
+    { "id": "ShareX.ShareX" },
+    { "id": "QL-Win.QuickLook" },
+    { "id": "Telegram.Unigram" },
+    { "id": "LocalSend.LocalSend" },
+    { "id": "Storik4pro.GoodbyeDPI-UI" }
+  ]
+}
