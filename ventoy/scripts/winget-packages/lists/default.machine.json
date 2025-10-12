@@ -6,6 +6,7 @@
     { "id": "BurntSushi.ripgrep.MSVC" },
     { "id": "Fastfetch-cli.Fastfetch" },
     { "id": "Git.Git", "override": "/qb" },
+    { "id": "Chocolatey.Chocolatey" },
     { "id": "Gyan.FFmpeg" },
     { "id": "ImageMagick.ImageMagick" },
     { "id": "JesseDuffield.lazygit" },
