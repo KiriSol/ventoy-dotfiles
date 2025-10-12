@@ -10,6 +10,7 @@
     { "id": "ImageMagick.ImageMagick" },
     { "id": "JesseDuffield.lazygit" },
     { "id": "MartinStorsjo.LLVM-MinGW.UCRT" },
+    { "id": "Google.PlatformTools" },
     { "id": "ajeetdsouza.zoxide" },
     { "id": "aristocratos.btop4win" },
     { "id": "astral-sh.uv" },
