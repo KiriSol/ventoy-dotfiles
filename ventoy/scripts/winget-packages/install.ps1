@@ -34,7 +34,7 @@ function Install-Packages {
         throw "File '$FilePath' not found!"
     }
 
-    $JsonFile = Get-Content $FilePath | ConvertFrom-Json
+    $JsonFile = Get-Content -Raw $FilePath | ConvertFrom-Json
     $packages = $JsonFile.packages
     $scope = $JsonFile.scope
 
@@ -46,9 +46,15 @@ function Install-Packages {
 
     if (-not $ForceInstall) {
         Write-Host "Packages for install (scope: $scope):" -ForegroundColor Yellow
-        $packages | ForEach-Object { Write-Host "  - $_" }
+        $packages | ForEach-Object {
+            if ($_.override) {
+                Write-Host "  - $($_.id) [override: $($_.override)]"
+            } else {
+                Write-Host "  - $($_.id)"
+            }
+        }
 
-        $confirm = Read-Host "`nContuine? (Y/n)"
+        $confirm = Read-Host "Continue? (Y/n)"
         if ($confirm -ne 'y' -and $confirm -ne 'Y' -and $confirm -ne '') {
             Write-Host "Canceled by User." -ForegroundColor Yellow
             return
@@ -59,23 +65,30 @@ function Install-Packages {
     $results = @()
 
     foreach ($pack in $packages) {
-        Write-Host "Installation: $pack" -ForegroundColor Cyan
+        Write-Host "Installation: $($pack.id)" -ForegroundColor Cyan
 
-        $argsumants = @(
+        $argsuments = @(
             "install",
-            "--id", "$pack", "-e",
+            "--id", "$($pack.id)",
+            "--exact",
             "--silent",
             "--accept-source-agreements",
             "--accept-package-agreements",
-            "--scope=$scope"
+            "--scope $scope"
         )
 
-        $process = Start-Process -FilePath "winget" -ArgumentList $argsumants -Wait -PassThru -NoNewWindow
+        if ($pack.override) {
+            $argsuments += "--override"
+            $argsuments += "$($pack.override)"
+        }
+
+        $process = Start-Process -FilePath "winget" -ArgumentList $argsuments -Wait -PassThru -NoNewWindow
 
         $res = [PSCustomObject]@{
-            Package  = $pack
+            Package  = $pack.id
             Success  = ($process.ExitCode -eq 0)
             ExitCode = $process.ExitCode
+            Override = if ($pack.override) { $pack.override } else { "None" }
         }
 
         $results += $res
