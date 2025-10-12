@@ -22,14 +22,10 @@
     { "id": "sxyazi.yazi" },
     { "id": "Neovim.Neovim" },
     { "id": "Nushell.Nushell" },
-    { "id": "TheDocumentFoundation.LibreOffice", "override": "/qb" },
     { "id": "Clement.bottom" },
     { "id": "OpenJS.NodeJS" },
-    { "id": "VSCodium.VSCodium", "override": "/qb" },
     { "id": "Microsoft.PowerShell" },
     { "id": "Starship.Starship" },
-    { "id": "LibreWolf.LibreWolf" },
-    { "id": "Python.Python.3.14", "override": "/qb" },
-    { "id": "Microsoft.WindowsTerminal.Preview" }
+    { "id": "Python.Python.3.14", "override": "/qb" }
   ]
 }

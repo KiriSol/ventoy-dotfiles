@@ -2,6 +2,10 @@
   "$schema": "../schema.json",
   "scope": "machine",
   "packages": [
+    { "id": "TheDocumentFoundation.LibreOffice", "override": "/qb" },
+    { "id": "VSCodium.VSCodium", "override": "/qb" },
+    { "id": "Microsoft.WindowsTerminal.Preview" },
+    { "id": "LibreWolf.LibreWolf" },
     { "id": "Microsoft.PowerToys" },
     { "id": "ShareX.ShareX" },
     { "id": "QL-Win.QuickLook" },
