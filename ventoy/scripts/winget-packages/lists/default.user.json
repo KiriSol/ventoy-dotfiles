@@ -1,8 +1,5 @@
 {
   "$schema": "../schema.json",
   "scope": "user",
-  "packages": [
-    { "id": "Alacritty.Alacritty" },
-    { "id": "JanDeDobbeleer.OhMyPosh" }
-  ]
+  "packages": [{ "id": "JanDeDobbeleer.OhMyPosh" }]
 }
