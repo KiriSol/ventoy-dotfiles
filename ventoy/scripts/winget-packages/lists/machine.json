@@ -27,7 +27,7 @@
         "Microsoft.PowerShell",
         "Starship.Starship",
         "LibreWolf.LibreWolf",
-        "Python.Python.3.13",
+        "Python.Python.3.14",
         "Microsoft.WindowsTerminal.Preview"
     ]
 }

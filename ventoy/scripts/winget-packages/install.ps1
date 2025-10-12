@@ -1,6 +1,6 @@
 param (
     [string]$File = "packages.json",
-    [bool]$Force = $false
+    [switch]$Force = $false
 )
 
 function Show-InstallationSummary {
