@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Winget Packages Configuration",
+  "description": "Schema for defining winget packages installation configuration with override support",
+  "type": "object",
+  "properties": {
+    "scope": {
+      "description": "Installation scope for packages",
+      "type": "string",
+      "enum": ["user", "machine"],
+      "default": "user"
+    },
+    "packages": {
+      "description": "List of package objects to install",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Package identifier in winget format",
+            "pattern": "^[a-zA-Z0-9][a-zA-Z0-9.-]*[a-zA-Z0-9]\\.[a-zA-Z0-9][a-zA-Z0-9.-]*[a-zA-Z0-9](\\.[a-zA-Z0-9][a-zA-Z0-9.-]*[a-zA-Z0-9])?$",
+            "examples": ["7zip.7zip", "Git.Git", "Python.Python.3.14"]
+          },
+          "override": {
+            "type": "string",
+            "description": "Override parameters for package installation",
+            "examples": ["/qb", "/quiet", "/passive", "/install /quiet"]
+          }
+        },
+        "required": ["id"],
+        "additionalProperties": false
+      },
+      "minItems": 1
+    }
+  },
+  "required": ["scope", "packages"],
+  "additionalProperties": false
+}

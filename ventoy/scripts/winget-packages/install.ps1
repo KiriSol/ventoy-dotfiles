@@ -65,7 +65,7 @@ function Install-Packages {
     $results = @()
 
     foreach ($pack in $packages) {
-        Write-Host "Installation: $($pack.id)" -ForegroundColor Cyan
+        Write-Host "- Installation: $($pack.id)" -ForegroundColor Cyan
 
         $argsuments = @(
             "install",

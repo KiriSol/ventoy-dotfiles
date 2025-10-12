@@ -1,4 +1,5 @@
 {
+  "$schema": "../schema.json",
   "scope": "machine",
   "packages": [
     { "id": "7zip.7zip" },
