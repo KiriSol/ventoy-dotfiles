@@ -30,6 +30,7 @@
     { "id": "OpenJS.NodeJS" },
     { "id": "Microsoft.PowerShell" },
     { "id": "Starship.Starship" },
-    { "id": "Python.Python.3.14", "override": "/qb" }
+    { "id": "Python.Python.3.14", "override": "/qb" },
+    { "id": "ArduinoSA.CLI" }
   ]
 }
