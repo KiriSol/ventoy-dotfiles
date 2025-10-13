@@ -6,10 +6,9 @@
     { "id": "TheDocumentFoundation.LibreOffice" },
     { "id": "VSCodium.VSCodium", "override": "/qb" },
     { "id": "LibreWolf.LibreWolf" },
-    { "id": "Microsoft.PowerToys" },
-    { "id": "ShareX.ShareX" },
     { "id": "Forkgram.Forkgram" },
     { "id": "LocalSend.LocalSend" },
+    { "id": "KDE.Filelight" },
     { "id": "Storik4pro.GoodbyeDPI-UI" }
   ]
 }

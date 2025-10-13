@@ -1,0 +1,5 @@
+{
+  "$schema": "../schema.json",
+  "scope": "user",
+  "packages": [{ "id": "Telegram.Unigram" }]
+}

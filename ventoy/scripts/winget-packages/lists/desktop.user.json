@@ -3,7 +3,6 @@
   "scope": "user",
   "packages": [
     { "id": "Microsoft.WindowsTerminal.Preview" },
-    { "id": "QL-Win.QuickLook" },
-    { "id": "Telegram.Unigram" }
+    { "id": "QL-Win.QuickLook" }
   ]
 }

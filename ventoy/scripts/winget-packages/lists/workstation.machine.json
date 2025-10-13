@@ -1,0 +1,11 @@
+{
+  "$schema": "../schema.json",
+  "scope": "machine",
+  "packages": [
+    { "id": "Microsoft.PowerToys" },
+    { "id": "ShareX.ShareX" },
+    { "id": "KDE.Kdenlive" },
+    { "id": "KDE.Krita" },
+    { "id": "BlenderFoundation.Blender" }
+  ]
+}
