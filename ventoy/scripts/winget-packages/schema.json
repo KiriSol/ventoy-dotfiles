@@ -7,7 +7,7 @@
     "scope": {
       "description": "Installation scope for packages",
       "type": "string",
-      "enum": ["user", "machine"],
+      "enum": ["user", "machine", "none"],
       "default": "user"
     },
     "packages": {

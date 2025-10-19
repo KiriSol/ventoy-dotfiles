@@ -73,9 +73,12 @@ function Install-Packages {
             "--exact",
             "--silent",
             "--accept-source-agreements",
-            "--accept-package-agreements",
-            "--scope $scope"
+            "--accept-package-agreements"
         )
+
+        if ($scope -ne "none") {
+            $argsuments += "--scope $scope"
+        }
 
         if ($pack.override) {
             $argsuments += "--override"
