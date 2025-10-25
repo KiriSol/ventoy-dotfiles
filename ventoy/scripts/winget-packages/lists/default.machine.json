@@ -11,6 +11,7 @@
     { "id": "ImageMagick.ImageMagick" },
     { "id": "JesseDuffield.lazygit" },
     { "id": "MartinStorsjo.LLVM-MinGW.UCRT" },
+    { "id": "Rustlang.Rust.MSVC" },
     { "id": "Google.PlatformTools" },
     { "id": "ajeetdsouza.zoxide" },
     { "id": "aristocratos.btop4win" },
