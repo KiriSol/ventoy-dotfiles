@@ -26,6 +26,8 @@
     { "id": "sharkdp.fd" },
     { "id": "sxyazi.yazi" },
     { "id": "Neovim.Neovim" },
+    { "id": "GNU.Wget2" },
+    { "id": "DEVCOM.Lua" },
     { "id": "Nushell.Nushell" },
     { "id": "Clement.bottom" },
     { "id": "OpenJS.NodeJS" },
