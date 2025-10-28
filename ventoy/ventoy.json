@@ -14,14 +14,10 @@
     {
       "parent": "/ISO/Install/Windows",
       "template": [
-        "/ventoy/scripts/windows-unattend/en.default-online.xml",
-        "/ventoy/scripts/windows-unattend/en.default-offline.xml",
-        "/ventoy/scripts/windows-unattend/ru.default-online.xml",
-        "/ventoy/scripts/windows-unattend/ru.default-offline.xml",
-        "/ventoy/scripts/windows-unattend/en.wipe-online.xml",
-        "/ventoy/scripts/windows-unattend/en.wipe-offline.xml",
-        "/ventoy/scripts/windows-unattend/ru.wipe-online.xml",
-        "/ventoy/scripts/windows-unattend/ru.wipe-offline.xml",
+        "/ventoy/scripts/windows-unattend/en.default.xml",
+        "/ventoy/scripts/windows-unattend/ru.default.xml",
+        "/ventoy/scripts/windows-unattend/en.wipe.xml",
+        "/ventoy/scripts/windows-unattend/ru.wipe.xml",
         "/ventoy/scripts/windows-unattend/local.xml"
       ]
     }
