@@ -15,3 +15,6 @@ ventoy/scripts/windows-unattend/local*.xml
 
 # Local utils
 utilities/*
+
+# Local files
+files/*
