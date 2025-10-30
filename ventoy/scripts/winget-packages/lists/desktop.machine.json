@@ -2,6 +2,7 @@
   "$schema": "../schema.json",
   "scope": "machine",
   "packages": [
+    { "id": "Storik4pro.GoodbyeDPI-UI" },
     { "id": "Alacritty.Alacritty" },
     { "id": "TheDocumentFoundation.LibreOffice" },
     { "id": "VSCodium.VSCodium", "override": "/qb" },
@@ -9,7 +10,6 @@
     { "id": "Forkgram.Forkgram" },
     { "id": "LocalSend.LocalSend" },
     { "id": "KDE.Filelight" },
-    { "id": "KDE.Dolphin" },
-    { "id": "Storik4pro.GoodbyeDPI-UI" }
+    { "id": "KDE.Dolphin" }
   ]
 }
