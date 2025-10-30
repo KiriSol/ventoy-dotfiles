@@ -4,6 +4,7 @@
   "packages": [
     { "id": "Storik4pro.GoodbyeDPI-UI" },
     { "id": "Alacritty.Alacritty" },
+    { "id": "abdenasser.NeoHtop" },
     { "id": "TheDocumentFoundation.LibreOffice" },
     { "id": "VSCodium.VSCodium", "override": "/qb" },
     { "id": "LibreWolf.LibreWolf" },
