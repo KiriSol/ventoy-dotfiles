@@ -2,16 +2,16 @@
   "$schema": "../schema.json",
   "scope": "machine",
   "packages": [
+    { "id": "Git.Git", "override": "/qb" },
+    { "id": "Python.Python.3.14", "override": "/qb" },
     { "id": "7zip.7zip" },
     { "id": "BurntSushi.ripgrep.MSVC" },
     { "id": "Fastfetch-cli.Fastfetch" },
-    { "id": "Git.Git", "override": "/qb" },
     { "id": "Chocolatey.Chocolatey" },
     { "id": "Gyan.FFmpeg" },
     { "id": "ImageMagick.ImageMagick" },
     { "id": "JesseDuffield.lazygit" },
     { "id": "MartinStorsjo.LLVM-MinGW.UCRT" },
-    { "id": "Rustlang.Rust.MSVC" },
     { "id": "Google.PlatformTools" },
     { "id": "ajeetdsouza.zoxide" },
     { "id": "aristocratos.btop4win" },
@@ -33,7 +33,6 @@
     { "id": "OpenJS.NodeJS" },
     { "id": "Microsoft.PowerShell" },
     { "id": "Starship.Starship" },
-    { "id": "Python.Python.3.14", "override": "/qb" },
     { "id": "ArduinoSA.CLI" },
     { "id": "qBittorrent.qBittorrent" }
   ]

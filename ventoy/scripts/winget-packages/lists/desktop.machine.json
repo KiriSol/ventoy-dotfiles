@@ -6,11 +6,11 @@
     { "id": "Alacritty.Alacritty" },
     { "id": "abdenasser.NeoHtop" },
     { "id": "TheDocumentFoundation.LibreOffice" },
-    { "id": "VSCodium.VSCodium", "override": "/qb" },
     { "id": "LibreWolf.LibreWolf" },
     { "id": "Forkgram.Forkgram" },
     { "id": "LocalSend.LocalSend" },
     { "id": "KDE.Filelight" },
-    { "id": "KDE.Dolphin" }
+    { "id": "KDE.Dolphin" },
+    { "id": "VSCodium.VSCodium", "override": "/qb" }
   ]
 }
