@@ -6,6 +6,7 @@
     { "id": "ShareX.ShareX" },
     { "id": "KDE.Kdenlive" },
     { "id": "KDE.Krita" },
+    { "id": "GIMP.GIMP.3" },
     { "id": "BlenderFoundation.Blender" }
   ]
 }
