@@ -18,7 +18,8 @@
         "/ventoy/scripts/windows-unattend/ru.default.xml",
         "/ventoy/scripts/windows-unattend/en.wipe.xml",
         "/ventoy/scripts/windows-unattend/ru.wipe.xml",
-        "/ventoy/scripts/windows-unattend/local.xml"
+        "/ventoy/scripts/windows-unattend/local.base.xml",
+        "/ventoy/scripts/windows-unattend/local.low.xml"
       ]
     }
   ],
