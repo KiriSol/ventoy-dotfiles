@@ -34,6 +34,9 @@
     { "id": "Microsoft.PowerShell" },
     { "id": "Starship.Starship" },
     { "id": "ArduinoSA.CLI" },
+    { "id": "JohnMacFarlane.Pandoc" },
+    { "id": "Typst.Typst" },
+    { "id": "Enter-tainer.typstyle" },
     { "id": "qBittorrent.qBittorrent" }
   ]
 }
