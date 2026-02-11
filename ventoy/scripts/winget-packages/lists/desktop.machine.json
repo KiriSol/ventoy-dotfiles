@@ -8,10 +8,8 @@
     { "id": "abdenasser.NeoHtop" },
     { "id": "TheDocumentFoundation.LibreOffice" },
     { "id": "LibreWolf.LibreWolf" },
-    { "id": "Forkgram.Forkgram" },
     { "id": "LocalSend.LocalSend" },
     { "id": "KDE.Filelight" },
-    { "id": "KDE.Dolphin" },
-    { "id": "VSCodium.VSCodium", "override": "/qb" }
+    { "id": "KDE.Dolphin" }
   ]
 }
