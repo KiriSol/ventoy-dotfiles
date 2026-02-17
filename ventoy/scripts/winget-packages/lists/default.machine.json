@@ -11,7 +11,7 @@
     { "id": "Gyan.FFmpeg" },
     { "id": "ImageMagick.ImageMagick" },
     { "id": "JesseDuffield.lazygit" },
-    { "id": "MartinStorsjo.LLVM-MinGW.UCRT" },
+    { "id": "zig.zig" },
     { "id": "Google.PlatformTools" },
     { "id": "ajeetdsouza.zoxide" },
     { "id": "astral-sh.uv" },
