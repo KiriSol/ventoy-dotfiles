@@ -2,7 +2,6 @@
   "$schema": "../schema.json",
   "scope": "machine",
   "packages": [
-    { "id": "Storik4pro.GoodbyeDPI-UI" },
     { "id": "Universal-Debloater-Alliance.uad-ng" },
     { "id": "Alacritty.Alacritty" },
     { "id": "abdenasser.NeoHtop" },

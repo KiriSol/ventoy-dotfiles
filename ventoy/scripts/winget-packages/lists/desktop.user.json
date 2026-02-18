@@ -1,8 +1,5 @@
 {
   "$schema": "../schema.json",
   "scope": "user",
-  "packages": [
-    { "id": "Microsoft.WindowsTerminal.Preview" },
-    { "id": "QL-Win.QuickLook" }
-  ]
+  "packages": [{ "id": "QL-Win.QuickLook" }]
 }
