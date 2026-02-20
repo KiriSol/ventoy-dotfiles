@@ -98,8 +98,7 @@ function Install-Packages {
 
         if ($res.Success) {
             Write-Host "  - Success" -ForegroundColor Green
-        }
-        else {
+        } else {
             Write-Host "  - Error (code: $($res.ExitCode))" -ForegroundColor Red
         }
     }
@@ -110,8 +109,7 @@ function Install-Packages {
 # Run
 try {
     Install-Packages -FilePath $File -ForceInstall $Force
-}
-catch {
+} catch {
     Write-Error $_.Exception.Message
     exit 1
 }
