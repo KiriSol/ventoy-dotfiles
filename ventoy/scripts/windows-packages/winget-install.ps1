@@ -27,7 +27,7 @@ function Install-Packages {
         [bool]$ForceInstall = $false
     )
 
-    if (-not (Get-Command winget -ErrorAction SilentlyContinue)) {
+    if (-not (Get-Command winget -ErrorAction Ignore)) {
         throw "winget not found!"
     }
     if (-not (Test-Path $FilePath)) {
