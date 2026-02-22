@@ -2,6 +2,7 @@
   "$schema": "../schema-winget.json",
   "scope": "machine",
   "packages": [
+    { "id": "Lapce.Lapce" },
     { "id": "TheDocumentFoundation.LibreOffice" },
     { "id": "LibreWolf.LibreWolf" }
   ]
