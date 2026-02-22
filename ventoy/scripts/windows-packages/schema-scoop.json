@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Scoop apps list",
+  "description": "Schema for defining Scoop apps",
+  "type": "object",
+  "properties": {
+    "$schema": true,
+    "level": {
+      "description": "Installation level for apps",
+      "type": "string",
+      "enum": ["global", "user"],
+      "default": "user"
+    },
+    "bucket": {
+      "description": "A bucket to install from",
+      "type": "string",
+      "examples": ["main", "extras", "versions", "nerd-fonts"],
+      "default": "main"
+    },
+    "apps": {
+      "description": "List of apps to install",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "description": "App Name",
+        "examples": ["7zip", "git"]
+      },
+      "minItems": 1
+    }
+  },
+  "required": ["apps"],
+  "additionalProperties": false
+}

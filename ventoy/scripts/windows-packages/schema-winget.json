@@ -4,6 +4,7 @@
   "description": "Schema for defining winget packages installation configuration with override support",
   "type": "object",
   "properties": {
+    "$schema": true,
     "scope": {
       "description": "Installation scope for packages",
       "type": "string",
@@ -20,7 +21,7 @@
             "type": "string",
             "description": "Package identifier in winget format",
             "pattern": "^[a-zA-Z0-9][a-zA-Z0-9.-]*[a-zA-Z0-9]\\.[a-zA-Z0-9][a-zA-Z0-9.-]*[a-zA-Z0-9](\\.[a-zA-Z0-9][a-zA-Z0-9.-]*[a-zA-Z0-9])?$",
-            "examples": ["7zip.7zip", "Git.Git", "Python.Python.3.14"]
+            "examples": ["7zip.7zip", "Git.Git"]
           },
           "override": {
             "type": "string",

@@ -1,0 +1,17 @@
+{
+  "$schema": "../schema-scoop.json",
+  "level": "global",
+  "bucket": "extras",
+  "apps": [
+    "television",
+    "lazygit",
+    "qbittorrent",
+    "uad-ng",
+    "alacritty",
+    "neohtop",
+    "filelight",
+    "dolphin",
+    "localsend",
+    "anytype"
+  ]
+}

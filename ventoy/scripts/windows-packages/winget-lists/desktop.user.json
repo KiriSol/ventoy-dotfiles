@@ -1,5 +1,5 @@
 {
-  "$schema": "../schema.json",
+  "$schema": "../schema-winget.json",
   "scope": "user",
-  "packages": [{ "id": "QL-Win.QuickLook" }]
+  "packages": [{ "id": "QL-Win.QuickLook" }, { "id": "Telegram.Unigram" }]
 }

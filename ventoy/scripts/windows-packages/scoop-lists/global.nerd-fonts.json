@@ -1,0 +1,6 @@
+{
+  "$schema": "../schema-scoop.json",
+  "level": "global",
+  "bucket": "nerd-fonts",
+  "apps": ["JetBrainsMono-NF-Mono", "JetBrainsMono-NF"]
+}

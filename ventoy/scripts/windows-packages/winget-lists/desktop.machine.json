@@ -1,14 +1,8 @@
 {
-  "$schema": "../schema.json",
+  "$schema": "../schema-winget.json",
   "scope": "machine",
   "packages": [
-    { "id": "Universal-Debloater-Alliance.uad-ng" },
-    { "id": "Alacritty.Alacritty" },
-    { "id": "abdenasser.NeoHtop" },
     { "id": "TheDocumentFoundation.LibreOffice" },
-    { "id": "LibreWolf.LibreWolf" },
-    { "id": "LocalSend.LocalSend" },
-    { "id": "KDE.Filelight" },
-    { "id": "KDE.Dolphin" }
+    { "id": "LibreWolf.LibreWolf" }
   ]
 }
