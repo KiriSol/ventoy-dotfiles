@@ -5,6 +5,7 @@
   "apps": [
     "7zip",
     "file",
+    "gpg",
     "mingit",
     "nu",
     "neovim",
