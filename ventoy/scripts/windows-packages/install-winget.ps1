@@ -1,115 +1,66 @@
 param (
+    [Parameter(HelpMessage="Path to json file")]
+    [ValidateScript({ Test-Path $_ })]
     [string]$File = "packages.json",
+
     [switch]$Force = $false
 )
 
-function Show-InstallationSummary {
-    param($Results)
-
-    $success = ($Results | Where-Object { $_.Success }).Count
-    $failed = ($Results | Where-Object { !$_.Success }).Count
-
-    Write-Host "Results:" -ForegroundColor Magenta
-    Write-Host "  Success: $success" -ForegroundColor Green
-    Write-Host "  Failed: $failed" -ForegroundColor Red
-
-    if ($failed -gt 0) {
-        Write-Host "Packages with errors:" -ForegroundColor Red
-        $Results | Where-Object { !$_.Success } | ForEach-Object {
-            Write-Host "  - $($_.Package) (code: $($_.ExitCode))" -ForegroundColor Red
-        }
-    }
-}
-
 function Install-Packages {
-    param (
-        [string]$FilePath,
-        [bool]$ForceInstall = $false
-    )
+    if (-not (Get-Command winget -ErrorAction Ignore)) { throw "winget not found!" }
 
-    if (-not (Get-Command winget -ErrorAction Ignore)) {
-        throw "winget not found!"
-    }
-    if (-not (Test-Path $FilePath)) {
-        throw "File '$FilePath' not found!"
-    }
+    $data = Get-Content $File -Raw | ConvertFrom-Json
+    $packages = $data.packages
+    $scope = $data.scope
 
-    $JsonFile = Get-Content -Raw $FilePath | ConvertFrom-Json
-    $packages = $JsonFile.packages
-    $scope = $JsonFile.scope
+    Write-Host "--- The wrapper for Winget ---" -ForegroundColor Cyan
+    Write-Host "Found packages: $($packages.Count) (Scope: $scope)"
 
-    if ($scope -ne "user" -and $scope -ne "machine") {
-        throw "Invalid scope: '$scope'!"
+    # Asking
+    if (-not $Force) {
+        $packages | ForEach-Object { Write-Host "  [ ] $($_.id)" }
+        $and = Read-Host "Install these packages? (y/N)"
+        if ($and -notmatch 'y') { return }
     }
 
-    Write-Host "Found $($packages.Count) packages" -ForegroundColor Green
+    $results = foreach ($pkg in $packages) {
+        Write-Host "Installing $($pkg.id)..." -NoNewline
 
-    if (-not $ForceInstall) {
-        Write-Host "Packages for install (scope: $scope):" -ForegroundColor Yellow
-        $packages | ForEach-Object {
-            if ($_.override) {
-                Write-Host "  - $($_.id) [override: $($_.override)]"
-            } else {
-                Write-Host "  - $($_.id)"
-            }
-        }
-
-        $confirm = Read-Host "Continue? (Y/n)"
-        if ($confirm -ne 'y' -and $confirm -ne 'Y' -and $confirm -ne '') {
-            Write-Host "Canceled by User." -ForegroundColor Yellow
-            return
-        }
-    }
-
-    # Installation
-    $results = @()
-
-    foreach ($pack in $packages) {
-        Write-Host "- Installation: $($pack.id)" -ForegroundColor Cyan
-
-        $argsuments = @(
-            "install",
-            "--id", "$($pack.id)",
-            "--exact",
-            "--silent",
-            "--accept-source-agreements",
-            "--accept-package-agreements"
+        $args = @(
+            "install", "--id", $pkg.id,
+            "--exact", "--silent", "--no-upgrade",
+            "--accept-source-agreements", "--accept-package-agreements"
         )
 
-        if ($scope -ne "none") {
-            $argsuments += "--scope $scope"
-        }
+        if ($scope) { $args += "--scope", $scope }
+        if ($pkg.override) { $args += "--override", $pkg.override }
 
-        if ($pack.override) {
-            $argsuments += "--override"
-            $argsuments += "$($pack.override)"
-        }
+        # Run
+        & winget $args | Out-Null
+        $exitCode = $LASTEXITCODE
+        $success = ($exitCode -eq 0 -or $exitCode -eq 0x8a15001a) # 0 or "already installed"
 
-        $process = Start-Process -FilePath "winget" -ArgumentList $argsuments -Wait -PassThru -NoNewWindow
-
-        $res = [PSCustomObject]@{
-            Package  = $pack.id
-            Success  = ($process.ExitCode -eq 0)
-            ExitCode = $process.ExitCode
-            Override = if ($pack.override) { $pack.override } else { "None" }
-        }
-
-        $results += $res
-
-        if ($res.Success) {
-            Write-Host "  - Success" -ForegroundColor Green
+        if ($success) {
+            Write-Host " [OK]" -ForegroundColor Green
         } else {
-            Write-Host "  - Error (code: $($res.ExitCode))" -ForegroundColor Red
+            Write-Host " [FAIL: $exitCode]" -ForegroundColor Red
+        }
+
+        [PSCustomObject]@{
+            Id       = $pkg.id
+            Success  = $success
+            ExitCode = $exitCode
         }
     }
 
-    Show-InstallationSummary -Results $results
+    # Results
+    $failed = $results | Where-Object { -not $_.Success }
+    if ($failed) {
+        Write-Host "`nError with installing:" -ForegroundColor Red
+        $failed | ForEach-Object { Write-Host "  - $($_.Id) (код: $($_.ExitCode))" }
+    } else {
+        Write-Host "`nAll packages successfully installed." -ForegroundColor Green
+    }
 }
 
-# Run
-try {
-    Install-Packages -FilePath $File -ForceInstall $Force
-} catch {
-    Write-Error $_.Exception.Message
-    exit 1
-}
+Install-Packages
