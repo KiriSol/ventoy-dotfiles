@@ -1,8 +1,7 @@
 {
   "control": [
     { "VTOY_DEFAULT_MENU_MODE": "0" },
-    { "VTOY_FILT_DOT_UNDERSCORE_FILE": "1" },
-    { "VTOY_MENU_LANGUAGE": "ru_RU" }
+    { "VTOY_FILT_DOT_UNDERSCORE_FILE": "1" }
   ],
   "theme": {
     "file": "/ventoy/themes/catppuccin-frappe/theme.txt",
@@ -14,12 +13,9 @@
     {
       "parent": "/ISO/Install/Windows",
       "template": [
-        "/ventoy/scripts/windows-unattend/en.default.xml",
-        "/ventoy/scripts/windows-unattend/ru.default.xml",
-        "/ventoy/scripts/windows-unattend/en.wipe.xml",
-        "/ventoy/scripts/windows-unattend/ru.wipe.xml",
-        "/ventoy/scripts/windows-unattend/local.base.xml",
-        "/ventoy/scripts/windows-unattend/local.main.xml"
+        "/ventoy/scripts/windows/autounattend/global.base.xml",
+        "/ventoy/scripts/windows/autounattend/local.base.xml",
+        "/ventoy/scripts/windows/autounattend/local.main.xml"
       ]
     }
   ],

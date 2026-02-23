@@ -1,5 +1,5 @@
 {
-  "$schema": "../schema-scoop.json",
+  "$schema": ".schema.json",
   "level": "global",
   "bucket": "main",
   "apps": [
@@ -27,15 +27,7 @@
     "imagemagick",
     "pandoc",
     "rclone",
-    "typst",
-    "lua",
-    "luarocks",
     "mise",
-    "uv",
-    "zvm",
-    "rustup",
-    "go",
-    "fnm",
     "arduino-cli",
     "transmission-cli",
     "adb"

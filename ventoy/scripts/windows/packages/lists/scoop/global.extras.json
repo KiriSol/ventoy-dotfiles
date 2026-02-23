@@ -1,5 +1,5 @@
 {
-  "$schema": "../schema-scoop.json",
+  "$schema": ".schema.json",
   "level": "global",
   "bucket": "extras",
   "apps": [

@@ -1,5 +1,0 @@
-{
-  "$schema": "../schema-winget.json",
-  "scope": "machine",
-  "packages": [{ "id": "dorssel.usbipd-win" }]
-}
