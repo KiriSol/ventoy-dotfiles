@@ -11,7 +11,7 @@
   },
   "auto_install": [
     {
-      "parent": "/ISO/Install/Windows",
+      "parent": "/_ISO/Windows",
       "template": [
         "/ventoy/scripts/windows/autounattend/global.base.xml",
         "/ventoy/scripts/windows/autounattend/local.base.xml",

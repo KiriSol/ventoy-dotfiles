@@ -1,20 +1,9 @@
-# Iso images
-ISO/**/*.iso
+# Local files
+./*
+!ventoy/*
 
 # Ventoy config backup
 ventoy/ventoy_backup.json
 
-# Ventoy plugins log
-VentoyPlugson.log
-
-# Other
-System\ Volume\ Information
-
 # Local scripts
 ventoy/scripts/windows/autounattend/*local*.xml
-
-# Local utils
-utilities/*
-
-# Local files
-files/*
