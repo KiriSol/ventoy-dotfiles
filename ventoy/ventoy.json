@@ -1,7 +1,8 @@
 {
   "control": [
     { "VTOY_DEFAULT_MENU_MODE": "0" },
-    { "VTOY_FILT_DOT_UNDERSCORE_FILE": "1" }
+    { "VTOY_FILT_DOT_UNDERSCORE_FILE": "1" },
+    { "VTOY_DEFAULT_SEARCH_ROOT": "/_ISO" }
   ],
   "theme": {
     "file": "/ventoy/themes/catppuccin-frappe/theme.txt",
