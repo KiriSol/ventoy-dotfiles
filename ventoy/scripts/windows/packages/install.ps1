@@ -1,6 +1,7 @@
 param (
     [string]$ScoopListsPath = "lists\scoop",
-    [string]$WingetListsPath = "lists\winget"
+    [string]$WingetListsPath = "lists\winget",
+    [switch]$Local = $false
 )
 
 $ErrorActionPreference = "Stop"
@@ -25,7 +26,7 @@ function Process-Lists ($Path, [scriptblock]$Action) {
 
 $ScoopAction = {
     param($data)
-    $global = $data.level -eq "global"
+    $global = if ($Local) { $false } else { $data.level -eq "global" }
     if ($global -and -not $IsAdmin) { throw "Admin rights required for global Scoop install" }
 
     if ($data.bucket -and $data.bucket -ne "main") {
@@ -43,7 +44,7 @@ $ScoopAction = {
 
 $WingetAction = {
     param($data)
-    $machine = $data.scope -eq "machine"
+    $machine = if ($Local) { $false } else { $data.scope -eq "machine" }
     if ($machine -and -not $IsAdmin) { throw "Admin rights required for machine Winget install" }
 
     foreach ($pkg in $data.packages) {
