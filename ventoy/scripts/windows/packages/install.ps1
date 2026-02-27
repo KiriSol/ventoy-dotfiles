@@ -4,85 +4,57 @@ param (
 )
 
 $ErrorActionPreference = "Stop"
+$IsAdmin = ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)
 
+function Test-Cmd ($Name) { return [bool](Get-Command $Name -ErrorAction Ignore) }
 
-## Check requirements
+if (-not (Test-Cmd scoop))  { throw "Scoop not found" }
+if (-not (Test-Cmd winget)) { throw "Winget not found" }
 
-$IsRunAsAdmin = [bool](
-    [Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()
-).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)
-
-if (-not (Get-Command -Name scoop -ErrorAction Ignore)) {
-    Write-Host 'Please, install Scoop by himself'
-    exit 1
-}
-if (-not (Get-Command -Name winget -ErrorAction Ignore)) {
-    Write-Host 'Winget not found'
-    exit 1
-}
-
-
-## Functions
-
-function Scoop-Installation ($File) {
-    $data = Get-Content $File -Raw | ConvertFrom-Json
-    if ($data.bucket -ne "main") {
-        if (-not (Get-Command -Name git -ErrorAction Ignore)) {
-            $args = @("install", "main/mingit", "--no-update-scoop")
-            if ($data.level -eq "global") {
-                if (-not $IsRunAsAdmin) {
-                    Write-Host "Please, run as Administrator to global installation"
-                    exit 1
-                }
-                $args += "--global"
-            }
-            scoop $args
+function Process-Lists ($Path, [scriptblock]$Action) {
+    if (-not (Test-Path $Path)) { return }
+    Get-ChildItem -Path $Path -Filter "*.json" | Where-Object { $_.Name -notlike ".*" } | ForEach-Object {
+        try {
+            $data = Get-Content $_.FullName -Raw | ConvertFrom-Json
+            &$Action $data
+        } catch {
+            Write-Warning "Failed to process $($_.Name): $($_.Exception.Message)" -ForegroundColor Red
         }
-        scoop bucket add $data.bucket
     }
+}
+
+$ScoopAction = {
+    param($data)
+    $global = $data.level -eq "global"
+    if ($global -and -not $IsAdmin) { throw "Admin rights required for global Scoop install" }
+
+    if ($data.bucket -and $data.bucket -ne "main") {
+        scoop bucket add $data.bucket 2>$null
+    }
+
     foreach ($app in $data.apps) {
-        $args = @("install", "$($data.bucket)/$app", "--no-update-scoop")
-        if ($data.level -eq "global") {
-            if (-not $IsRunAsAdmin) {
-                Write-Host "Please, run as Administrator to global installation"
-                exit 1
-            }
-            $args += "--global"
-        }
+        $id = if ($data.bucket) { "$($data.bucket)/$app" } else { $app }
+        $args = @("install", $id, "--no-update-scoop")
+        if ($global) { $args += "--global" }
+        Write-Host "Scoop: Installing $id" -ForegroundColor Blue
         scoop $args
     }
 }
 
-function Winget-Installation ($File) {
-    $data = Get-Content $File -Raw | ConvertFrom-Json
+$WingetAction = {
+    param($data)
+    $machine = $data.scope -eq "machine"
+    if ($machine -and -not $IsAdmin) { throw "Admin rights required for machine Winget install" }
+
     foreach ($pkg in $data.packages) {
-        $args = @(
-            "install", "--id", $pkg.id,
-            "--exact", "--silent", "--no-upgrade",
-            "--accept-source-agreements", "--accept-package-agreements"
-        )
-        if ($data.scope -eq "machine") {
-            if (-not $IsRunAsAdmin) {
-                Write-Host "Please, run as Administrator to machine installation"
-                exit 1
-            }
-            $args += "--scope", "machine"
-        }
+        $args = @("install", "--id", $pkg.id, "--exact", "--silent", "--accept-source-agreements", "--accept-package-agreements")
+        if ($machine) { $args += "--scope", "machine" }
         if ($pkg.override) { $args += "--override", $pkg.override }
+        Write-Host "Winget: Installing $($pkg.id)" -ForegroundColor Blue
         winget $args
     }
 }
 
+Process-Lists -Path $ScoopListsPath -Action $ScoopAction
+Process-Lists -Path $WingetListsPath -Action $WingetAction
 
-## Run
-
-$ScoopLists = Get-ChildItem -Path $ScoopListsPath -Filter "*.json" | Where-Object { $_.Name -notlike ".*" }
-$WingetLists = Get-ChildItem -Path $WingetListsPath -Filter "*.json" | Where-Object { $_.Name -notlike ".*" }
-
-foreach ($file in $ScoopLists) {
-    Scoop-Installation $file
-}
-
-foreach ($file in $WingetLists) {
-    Winget-Installation $file
-}

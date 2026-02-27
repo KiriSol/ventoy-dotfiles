@@ -8,8 +8,8 @@
     "level": {
       "description": "Installation level for apps",
       "type": "string",
-      "enum": ["global", "user"],
-      "default": "user"
+      "enum": ["global", "local"],
+      "default": "local"
     },
     "bucket": {
       "description": "A bucket to install from",

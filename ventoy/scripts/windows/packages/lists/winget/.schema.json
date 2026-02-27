@@ -9,7 +9,7 @@
       "description": "Installation scope for packages",
       "type": "string",
       "enum": ["user", "machine", "none"],
-      "default": "user"
+      "default": "none"
     },
     "packages": {
       "description": "List of package objects to install",
