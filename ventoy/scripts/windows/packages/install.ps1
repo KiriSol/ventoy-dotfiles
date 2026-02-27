@@ -18,7 +18,7 @@ function Process-Lists ($Path, [scriptblock]$Action) {
             $data = Get-Content $_.FullName -Raw | ConvertFrom-Json
             &$Action $data
         } catch {
-            Write-Warning "Failed to process $($_.Name): $($_.Exception.Message)" -ForegroundColor Red
+            Write-Warning "Failed to process $($_.Name): $($_.Exception.Message)"
         }
     }
 }
