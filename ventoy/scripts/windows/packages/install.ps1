@@ -1,3 +1,5 @@
+#Requires -Version 5
+
 param (
     [string]$ScoopListsPath = "lists\scoop",
     [string]$WingetListsPath = "lists\winget",
