@@ -4,7 +4,6 @@
   "packages": [
     { "id": "Microsoft.PowerToys" },
     { "id": "ShareX.ShareX" },
-    { "id": "Zen-Team.Zen-Browser" },
     { "id": "KDE.Kdenlive" },
     { "id": "KDE.Krita" },
     { "id": "GIMP.GIMP.3" },

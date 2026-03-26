@@ -60,4 +60,3 @@ $WingetAction = {
 
 Process-Lists -Path $ScoopListsPath -Action $ScoopAction
 Process-Lists -Path $WingetListsPath -Action $WingetAction
-
