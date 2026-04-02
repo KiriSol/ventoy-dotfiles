@@ -1,10 +1,9 @@
 {
-  "$schema": ".schema.json",
-  "scope": "machine",
-  "packages": [
-    { "id": "dorssel.usbipd-win" },
-    { "id": "Lapce.Lapce" },
-    { "id": "LibreWolf.LibreWolf" },
-    { "id": "TheDocumentFoundation.LibreOffice" }
-  ]
+    "$schema": ".schema.json",
+    "scope": "machine",
+    "packages": [
+        { "id": "dorssel.usbipd-win" },
+        { "id": "LibreWolf.LibreWolf" },
+        { "id": "TheDocumentFoundation.LibreOffice" }
+    ]
 }
