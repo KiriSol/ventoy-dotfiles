@@ -37,10 +37,10 @@ $ScoopAction = {
 
     foreach ($app in $data.apps) {
         $id = if ($data.bucket) { "$($data.bucket)/$app" } else { $app }
-        $args = @("install", $id, "--no-update-scoop")
+        $args = @("install", $id)
         if ($global) { $args += "--global" }
         Write-Host "Scoop: Installing $id" -ForegroundColor Blue
-        scoop $args
+        scoop @args
     }
 }
 
