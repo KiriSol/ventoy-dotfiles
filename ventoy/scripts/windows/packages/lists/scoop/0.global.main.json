@@ -8,6 +8,7 @@
         "gpg",
         "mingit",
         "adb",
+        "uutils-coreutils",
         "nu",
         "mise",
         "poppler",
