@@ -1,3 +1,6 @@
 [submodule "utilities/Microsoft-Activation-Scripts"]
 	path = tools/Microsoft-Activation-Scripts
 	url = https://github.com/massgravel/Microsoft-Activation-Scripts.git
+[submodule "tools/Win11Debloat"]
+	path = tools/Win11Debloat
+	url = https://github.com/Raphire/Win11Debloat.git
