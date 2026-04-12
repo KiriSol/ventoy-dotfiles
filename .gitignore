@@ -1,9 +1,11 @@
-# Local files
-./*
-!ventoy/*
+## Local files
 
-# Ventoy config backup
+_ISO/*
+files/*
+tools/*
+
+# Ventoy config backup by Plugson
 ventoy/ventoy_backup.json
 
-# Local scripts
+# Autounattend scripts
 ventoy/scripts/windows/autounattend/*local*.xml

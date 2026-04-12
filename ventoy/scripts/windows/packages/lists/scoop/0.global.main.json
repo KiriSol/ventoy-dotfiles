@@ -1,18 +1,19 @@
 {
-    "$schema": ".schema.json",
-    "level": "global",
-    "bucket": "main",
-    "apps": [
-        "7zip",
-        "file",
-        "gpg",
-        "mingit",
-        "adb",
-        "uutils-coreutils",
-        "nu",
-        "mise",
-        "poppler",
-        "resvg",
-        "imagemagick"
-    ]
+  "$schema": ".schema.json",
+  "level": "global",
+  "bucket": "main",
+  "apps": [
+    "7zip",
+    "file",
+    "gpg",
+    "less",
+    "mingit",
+    "adb",
+    "uutils-coreutils",
+    "nu",
+    "mise",
+    "poppler",
+    "resvg",
+    "imagemagick"
+  ]
 }

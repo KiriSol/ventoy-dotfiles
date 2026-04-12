@@ -1,6 +1,6 @@
 {
-    "$schema": ".schema.json",
-    "level": "global",
-    "bucket": "extras",
-    "apps": ["qbittorrent", "uad-ng", "alacritty", "localsend"]
+  "$schema": ".schema.json",
+  "level": "global",
+  "bucket": "extras",
+  "apps": ["qbittorrent", "uad-ng", "alacritty", "localsend"]
 }
