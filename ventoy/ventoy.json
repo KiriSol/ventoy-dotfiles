@@ -14,9 +14,7 @@
     {
       "parent": "/_ISO/Windows",
       "template": [
-        "/ventoy/scripts/windows/autounattend/global.base.xml",
-        "/ventoy/scripts/windows/autounattend/local.base.xml",
-        "/ventoy/scripts/windows/autounattend/local.main.xml"
+        "/ventoy/scripts/windows/autounattend/main.xml"
       ]
     }
   ],

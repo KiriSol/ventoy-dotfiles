@@ -8,4 +8,4 @@ tools/*
 ventoy/ventoy_backup.json
 
 # Autounattend scripts
-ventoy/scripts/windows/autounattend/*local*.xml
+ventoy/scripts/windows/autounattend/*.xml
