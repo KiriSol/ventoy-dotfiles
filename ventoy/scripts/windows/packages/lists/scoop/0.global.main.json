@@ -8,6 +8,7 @@
     "gpg",
     "less",
     "mingit",
+    "make",
     "adb",
     "uutils-coreutils",
     "nu",
