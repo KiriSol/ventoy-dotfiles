@@ -11,7 +11,7 @@ $IsAdmin = ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIden
 
 function Test-Cmd ($Name) { return [bool](Get-Command $Name -ErrorAction Ignore) }
 
-if (-not (Test-Cmd scoop))  { throw "Scoop not found" }
+if (-not (Test-Cmd scoop)) { throw "Scoop not found" }
 if (-not (Test-Cmd winget)) { throw "Winget not found" }
 
 function Process-Lists ($Path, [scriptblock]$Action) {
@@ -20,7 +20,8 @@ function Process-Lists ($Path, [scriptblock]$Action) {
         try {
             $data = Get-Content $_.FullName -Raw | ConvertFrom-Json
             &$Action $data
-        } catch {
+        }
+        catch {
             Write-Warning "Failed to process $($_.Name): $($_.Exception.Message)"
         }
     }

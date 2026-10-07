@@ -1,0 +1,49 @@
+excludes = ["_ISO/*", "files/*", "tools/*"]
+
+[formatter.dprint]
+command = "dprint"
+options = ["fmt"]
+includes = ["*.xml", "*.yaml", "*.yml", "*.md"]
+
+[formatter.biome]
+command = "biome"
+options = ["format", "--write"]
+includes = ["*.json", "*.jsonc"]
+
+[formatter.tombi]
+command = "tombi"
+options = ["format"]
+includes = ["*.toml"]
+
+[formatter.kdlfmt]
+command = "kdlfmt"
+options = ["format"]
+includes = ["*.kdl"]
+
+[formatter.shfmt]
+command = "shfmt"
+options = ["-w", "-i", "2", "-ci", "-bn", "-sr"]
+includes = ["*.sh", "*.bash"]
+
+[formatter.fish_indent]
+command = "fish_indent"
+options = ["-w"]
+includes = ["*.fish"]
+
+[formatter.nufmt]
+command = "nufmt"
+includes = ["*.nu"]
+
+[formatter.psfmt]
+command = "psfmt"
+options = ["--write"]
+includes = ["*.ps1"]
+
+[formatter.just]
+command = "just"
+options = ["--fmt", "-f"]
+includes = ["justfile", "**/justfile", "*.just"]
+
+[formatter.stylua]
+command = "stylua"
+includes = ["*.lua"]

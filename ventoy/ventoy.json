@@ -13,9 +13,7 @@
   "auto_install": [
     {
       "parent": "/_ISO/Windows",
-      "template": [
-        "/ventoy/scripts/windows/autounattend/main.xml"
-      ]
+      "template": ["/ventoy/scripts/windows/autounattend/main.xml"]
     }
   ],
   "menu_class": [],
