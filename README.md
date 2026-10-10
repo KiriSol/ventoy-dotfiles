@@ -1,1 +1,1 @@
-# Ventoy Dotfiles
+# Ventoy dotfiles
