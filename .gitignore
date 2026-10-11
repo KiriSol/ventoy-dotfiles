@@ -1,10 +1,8 @@
 ## Local files
 
+_ISO/*
 files/*
 tools/*
-
-# ISO images
-_ISO/*.iso
 
 # Ventoy config backup by Plugson
 ventoy/ventoy_backup.json
