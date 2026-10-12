@@ -1,5 +1,5 @@
 [windows]
-set shell := ["powershell", "-Command"]
+set shell := ["cmd", "/c"]
 
 alias f := fmt
 
@@ -15,4 +15,4 @@ alias f := fmt
 
 [windows]
 @windows-packages-install:
-    {{ justfile_dir() }}/ventoy/scripts/windows/packages/install.ps1
+    powershell -File {{ justfile_dir() }}/ventoy/scripts/windows/packages/install.ps1
