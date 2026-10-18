@@ -10,9 +10,13 @@ alias f := fmt
 @fmt *args:
     treefmt {{ args }}
 
+scripts-path := justfile_dir() + "/ventoy/scripts"
+
 @iso-update:
-    nu {{ justfile_dir() }}/ventoy/scripts/iso-updater/main.nu --config {{ justfile_dir() }}/_ISO/iso-updater.toml
+    nu {{ scripts-path }}/iso-updater/main.nu --config {{ justfile_dir() }}/_ISO/iso-updater.toml
+
+windows-packages-path := scripts-path + "/windows/packages"
 
 [windows]
-@windows-packages-install:
-    powershell -File {{ justfile_dir() }}/ventoy/scripts/windows/packages/install.ps1
+@windows-packages-install *args:
+    powershell -File {{ windows-packages-path }}/install.ps1 -ScoopListsPath {{ windows-packages-path }}/lists/scoop -WingetListsPath {{ windows-packages-path }}/lists/winget {{ args }}
