@@ -7,8 +7,8 @@ alias f := fmt
     just --list
 
 [group("dev")]
-@fmt:
-    treefmt
+@fmt *args:
+    treefmt {{ args }}
 
 @iso-update:
     nu {{ justfile_dir() }}/ventoy/scripts/iso-updater/main.nu --config {{ justfile_dir() }}/_ISO/iso-updater.toml
