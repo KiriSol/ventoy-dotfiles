@@ -11,14 +11,12 @@
     },
     "bucket": {
       "type": "string",
-      "examples": ["main", "extras", "versions", "nerd-fonts"],
       "default": "main"
     },
     "apps": {
       "type": "array",
       "items": {
-        "type": "string",
-        "examples": ["7zip", "git"]
+        "type": "string"
       },
       "minItems": 1
     }

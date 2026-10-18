@@ -15,12 +15,10 @@
         "type": "object",
         "properties": {
           "id": {
-            "type": "string",
-            "examples": ["7zip.7zip", "Git.Git"]
+            "type": "string"
           },
           "override": {
-            "type": "string",
-            "examples": ["/qb", "/quiet", "/passive", "/install /quiet"]
+            "type": "string"
           }
         },
         "required": ["id"],
