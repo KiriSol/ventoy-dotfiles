@@ -27,6 +27,6 @@
       "minItems": 1
     }
   },
-  "required": ["scope", "packages"],
+  "required": ["packages"],
   "additionalProperties": false
 }

@@ -19,4 +19,4 @@ windows-packages-path := scripts-path + "/windows/packages"
 
 [windows]
 @windows-packages-install *args:
-    powershell -File {{ windows-packages-path }}/install.ps1 -ScoopListsPath {{ windows-packages-path }}/lists/scoop -WingetListsPath {{ windows-packages-path }}/lists/winget {{ args }}
+    nu {{ windows-packages-path }}/install.nu --scoop-lists-path {{ windows-packages-path }}/lists/scoop --winget-lists-path {{ windows-packages-path }}/lists/winget {{ args }}

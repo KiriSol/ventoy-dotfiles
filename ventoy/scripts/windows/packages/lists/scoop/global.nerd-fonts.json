@@ -1,6 +1,0 @@
-{
-  "$schema": ".schema.json",
-  "level": "global",
-  "bucket": "nerd-fonts",
-  "apps": ["JetBrainsMono-NF-Mono", "JetBrainsMono-NF"]
-}

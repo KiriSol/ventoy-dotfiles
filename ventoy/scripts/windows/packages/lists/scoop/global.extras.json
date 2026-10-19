@@ -1,6 +1,0 @@
-{
-  "$schema": ".schema.json",
-  "level": "global",
-  "bucket": "extras",
-  "apps": ["qbittorrent", "alacritty", "localsend", "rustdesk"]
-}
