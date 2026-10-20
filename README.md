@@ -2,4 +2,4 @@
 
 ## TODO:
 
-- [ ] make iso-updater script
+- [ ] do iso-updater script
