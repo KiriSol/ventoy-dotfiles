@@ -6,6 +6,9 @@ tools/*
 # ISO images
 _ISO/*.iso
 
+# ISO manager lock file
+_ISO/iso-manager.lock
+
 # Ventoy config backup by Plugson
 ventoy/ventoy_backup.json
 

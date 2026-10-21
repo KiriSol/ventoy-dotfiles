@@ -2,4 +2,4 @@
 
 ## TODO:
 
-- [ ] do iso-updater script
+- [ ] do iso manager

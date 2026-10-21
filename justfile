@@ -12,8 +12,8 @@ alias f := fmt
 
 scripts-path := justfile_dir() + "/ventoy/scripts"
 
-@iso-update:
-    nu {{ scripts-path }}/iso-updater/main.nu --config {{ justfile_dir() }}/_ISO/iso-updater.toml
+@iso *args:
+    nu {{ scripts-path }}/iso-manager/main.nu --path {{ justfile_dir() }}/_ISO {{ args }}
 
 windows-packages-path := scripts-path + "/windows/packages"
 
