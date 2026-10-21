@@ -1,16 +1,16 @@
-let is_admin = (is-admin)
+let is_admin: bool = (is-admin)
 
 def process-lists [path: path, action: closure] {
     ls $"($path)/*.yaml"
     | where {|file| ($file.name | path basename | str starts-with ".") == false }
     | each {|file|
-        let data = open $file.name
+        let data: record = open $file.name
         do $action $data
     }
 }
 
-let scoop_action = {|data|
-    let global = if ($data | get -o level) == "global" { true } else { false }
+let scoop_action: closure = {|data|
+    let global: bool = if ($data | get -o level) == "global" { true } else { false }
     if $global and not $is_admin {
         error make {msg: "Admin rights required for global scoop install"}
     }
@@ -21,22 +21,22 @@ let scoop_action = {|data|
 
     if ($data | get -o apps) != null {
         $data.apps | each {|app|
-            let id = if ($data | get -o bucket) != null { $"($data.bucket)/($app)" } else { $"main/($app)" }
-            let args = if $global { ["install", $id, "--global"] } else { ["install", $id] }
+            let id: string = if ($data | get -o bucket) != null { $"($data.bucket)/($app)" } else { $"main/($app)" }
+            let args: list = if $global { ["install", $id, "--global"] } else { ["install", $id] }
             ^scoop ...$args
         }
     }
 }
 
-let winget_action = {|data|
-    let machine = if ($data | get -o scope) == "machine" { true } else { false }
+let winget_action: closure = {|data|
+    let machine: bool = if ($data | get -o scope) == "machine" { true } else { false }
     if $machine and not $is_admin {
         error make {msg: "Admin rights required for machine winget install"}
     }
 
     if ($data | get -o packages) != null {
         $data.packages | each {|pkg|
-            mut args = [
+            mut args: list = [
                 "install",
                 "--id", $pkg.id,
                 "--exact",
