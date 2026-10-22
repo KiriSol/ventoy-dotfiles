@@ -1,16 +1,16 @@
 let is_admin: bool = (is-admin)
 
-def process-lists [path: path, action: closure] {
+def process-lists [path: path, action: closure, local: bool] {
     ls $"($path)/*.yaml"
     | where {|file| ($file.name | path basename | str starts-with ".") == false }
     | each {|file|
         let data: record = open $file.name
-        do $action $data
+        do $action $data $local
     }
 }
 
-let scoop_action: closure = {|data|
-    let global: bool = if ($data | get -o level) == "global" { true } else { false }
+let scoop_action: closure = {|data, local|
+    let global: bool = if ($data | get -o level) == "global" and not $local { true } else { false }
     if $global and not $is_admin {
         error make {msg: "Admin rights required for global scoop install"}
     }
@@ -28,8 +28,8 @@ let scoop_action: closure = {|data|
     }
 }
 
-let winget_action: closure = {|data|
-    let machine: bool = if ($data | get -o scope) == "machine" { true } else { false }
+let winget_action: closure = {|data, local|
+    let machine: bool = if ($data | get -o scope) == "machine" and not $local { true } else { false }
     if $machine and not $is_admin {
         error make {msg: "Admin rights required for machine winget install"}
     }
@@ -66,6 +66,6 @@ def main [--scoop-lists-path: path, --winget-lists-path: path, --local] {
         }
     }
 
-    process-lists $scoop_lists_path $scoop_action
-    process-lists $winget_lists_path $winget_action
+    process-lists $scoop_lists_path $scoop_action $local
+    process-lists $winget_lists_path $winget_action $local
 }
