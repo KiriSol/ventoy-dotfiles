@@ -54,6 +54,10 @@ let winget_action: closure = {|data, local|
 }
 
 def main [--scoop-lists-path: path, --winget-lists-path: path, --local] {
+    if $nu.os-info.family != "windows" {
+        error make {msg: "You are not on Windows"}
+    }
+
     ["^scoop" "^winget"] | each {|cmd|
         if (which $cmd | is-empty) {
             error make {msg: $"($cmd) not found"}
@@ -62,7 +66,7 @@ def main [--scoop-lists-path: path, --winget-lists-path: path, --local] {
 
     [$scoop_lists_path, $winget_lists_path] | each {|path|
         if ($path | path type) != "dir" {
-            error make {msg: $"directory ($path) not exists"}
+            error make {msg: $"Directory ($path) not exists"}
         }
     }
 
