@@ -1,14 +1,14 @@
 [windows]
 set shell := ["cmd", "/c"]
 
-alias f := fmt
+alias f := format
 
 @default:
     just --list
 
 [group("dev")]
-@fmt *args:
-    treefmt {{ args }}
+@format *args:
+    treefmt {{ args }} -- {{ justfile_dir() }}
 
 scripts-path := justfile_dir() + "/ventoy/scripts"
 

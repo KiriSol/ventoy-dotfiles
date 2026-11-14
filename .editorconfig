@@ -1,0 +1,33 @@
+[*]
+charset = utf-8
+end_of_line = lf
+indent_size = 2
+indent_style = space
+insert_final_newline = true
+tab_width = 4
+trim_trailing_whitespace = true
+
+## Changes
+
+[*.md]
+trim_trailing_whitespace = false
+
+[*.{fish,nu,nuon,ps1,psd1,psm1}]
+indent_size = 4
+
+[{justfile,*.just}]
+indent_size = 4
+
+[{Makefile,*.mk}]
+indent_style = tab
+
+[.git{attributes,config,ignore,modules}]
+indent_style = tab
+
+## Tools
+
+# Shfmt
+[*.{sh,bash}]
+binary_next_line = true
+space_redirects = true
+switch_case_indent = true

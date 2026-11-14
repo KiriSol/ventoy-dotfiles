@@ -1,33 +1,31 @@
-excludes = ["_ISO/*", "files/*", "tools/*"]
+#:schema https://schemastore.org/treefmt.json
 
-[formatter.dprint]
-command = "dprint"
-options = ["fmt"]
-includes = ["*.xml", "*.yaml", "*.yml", "*.md"]
+allow-missing-formatter = false
+excludes = ["_ISO/*", "files/*", "tools/*", "ventoy/themes/*"]
+
+[formatter.typos]
+command = "typos"
+options = ["--write-changes"]
+includes = ["*"]
 
 [formatter.biome]
 command = "biome"
 options = ["format", "--write"]
-includes = ["*.json", "*.jsonc"]
+includes = ["*.json", "*.jsonc", "*.yaml", "*.md"]
 
 [formatter.tombi]
 command = "tombi"
 options = ["format"]
 includes = ["*.toml"]
 
-[formatter.kdlfmt]
-command = "kdlfmt"
-options = ["format"]
-includes = ["*.kdl"]
-
 [formatter.shfmt]
 command = "shfmt"
-options = ["-w", "-i", "2", "-ci", "-bn", "-sr"]
+options = ["--write"]
 includes = ["*.sh", "*.bash"]
 
 [formatter.fish_indent]
 command = "fish_indent"
-options = ["-w"]
+options = ["--write"]
 includes = ["*.fish"]
 
 [formatter.nufmt]
@@ -37,13 +35,13 @@ includes = ["*.nu", "*.nuon"]
 [formatter.psfmt]
 command = "psfmt"
 options = ["--write"]
-includes = ["*.ps1"]
+includes = ["*.ps1", "*.psd1", "*.psm1"]
 
 [formatter.just]
 command = "just"
-options = ["--fmt", "-f"]
-includes = ["justfile", "**/justfile", "*.just"]
+options = ["--format", "--justfile"]
+includes = ["*.just", "justfile", "**/justfile"]
 
-[formatter.stylua]
-command = "stylua"
-includes = ["*.lua"]
+[formatter.nixfmt]
+command = "nixfmt"
+includes = ["*.nix"]
