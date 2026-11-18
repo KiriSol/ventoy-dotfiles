@@ -19,9 +19,11 @@ indent_size = 4
 indent_size = 4
 
 [{Makefile,*.mk}]
+indent_size = 4
 indent_style = tab
 
 [.git{attributes,config,ignore,modules}]
+indent_size = 4
 indent_style = tab
 
 ## Tools

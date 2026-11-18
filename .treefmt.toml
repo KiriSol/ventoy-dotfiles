@@ -1,4 +1,4 @@
-#:schema https://schemastore.org/treefmt.json
+#:schema https://www.schemastore.org/treefmt.json
 
 allow-missing-formatter = false
 excludes = ["_ISO/*", "files/*", "tools/*", "ventoy/themes/*"]
