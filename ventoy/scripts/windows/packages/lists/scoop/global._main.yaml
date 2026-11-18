@@ -3,16 +3,16 @@ level: global
 bucket: main
 apps:
   - 7zip
+  - adb
   - aria2
   - file
   - gpg
+  - imagemagick
   - less
-  - mingit
   - make
-  - adb
-  - uutils-coreutils
-  - nu
+  - mingit
   - mise
+  - nu
   - poppler
   - resvg
-  - imagemagick
+  - uutils-coreutils
