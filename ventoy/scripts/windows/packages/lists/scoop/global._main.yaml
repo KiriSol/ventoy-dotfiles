@@ -5,14 +5,43 @@ apps:
   - 7zip
   - adb
   - aria2
+  - bat
+  - bottom
+  - dprint
+  - duf
+  - dust
+  - eza
+  - fastfetch
+  - fd
   - file
+  - fzf
+  - ghgrab
+  - gitui
   - gpg
+  - gping
+  - helix
   - imagemagick
+  - jq
+  - just
   - less
   - make
   - mingit
   - mise
+  - neovim
   - nu
+  - pandoc
   - poppler
   - resvg
+  - ripgrep
+  - sd
+  - starship
+  - tlrc
+  - tokei
+  - tree-sitter
+  - typos
+  - typst
   - uutils-coreutils
+  - xh
+  - yazi
+  - yq
+  - zoxide
