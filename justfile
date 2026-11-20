@@ -13,7 +13,7 @@ alias f := format
 scripts-path := justfile_dir() + "/ventoy/scripts"
 
 @iso *args:
-    nu {{ scripts-path }}/iso-manager/main.nu {{ args }} --path {{ justfile_dir() }}/_ISO
+    nu {{ scripts-path }}/iso/main.nu {{ args }} --path {{ justfile_dir() }}/_ISO
 
 windows-packages-path := scripts-path + "/windows/packages"
 

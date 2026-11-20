@@ -1,13 +1,13 @@
 #!/usr/bin/env nu
 
-export const LOCK_FILE_NAME: string = "iso-manager.lock"
+export const LOCK_FILE_NAME: string = "iso-lock.toml"
 
 def get-lock [iso_path: path] {
     let path: path = $iso_path | path join $LOCK_FILE_NAME | path expand
     if ($path | path type) != "file" {
         touch $path
     }
-    return (open $path | from toml)
+    return (open $path)
 }
 
 def save-lock [iso_path: path, lock: record] {
